@@ -140,7 +140,7 @@ If we stack up these vectors into a matrix $[\hat{\bm{i}_r} \ \hat{\bm{i}_\theta
 
 
 \section*{Task 3: Sun-Pointing Reference Frame Orientation}
-The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a reference frame $\mathcal{R}_s$ must be generated such that $\hat{\bm{r}}_3$ points in the sun direction ($\hat{\bm{n}}_2$). Given that the solar reference frame is constant with respect to the inertial frame, the $^N\bm{\omega}_{R_s N} = \bm{0}$. And our DCM is constructed with the following: 
+The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a reference frame $\mathcal{R}_s$ must be generated such that $\hat{\bm{r}}_3$ points in the sun direction ($\hat{\bm{n}}_2$). Given that the solar reference frame is constant with respect to the inertial frame, the $^N\bm{\omega}_{R_s N} = \bm{0}$. And our DCM is easily constructed using our assumptions with the following: 
 
 
 \begin{align}
@@ -153,9 +153,7 @@ The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a referenc
 \end{align}
 
 \section*{Task 4: Nadir-Pointing Reference Frame Orientation}
-In order to point the payload platform axis $\hat{\bm{b}}_1$ towards Mars in the nadir direction, the reference frame $\mathcal{R}_n$ must be constructed such that $\hat{\bm{n}}_1$ points towards the planet. Additionally, we assume that $\hat{\bm{r}}_2$ is in the direction of the velocity $\hat{\bm{i}}_\theta$. 
-
-Therefore we can construct a Hill-to-reference DCM which, using our now stated definitions, follows as such: 
+In order to point the payload platform axis $\hat{\bm{b}}_1$ towards Mars in the nadir direction, the reference frame $\mathcal{R}_n$ must be constructed such that $\hat{\bm{r}}_1$ points towards the planet. Additionally, we assume that $\hat{\bm{r}}_2$ is in the direction of the velocity $\hat{\bm{i}}_\theta$. Therefore we easily can construct a Hill-to-reference DCM which, using our now stated definitions, follows as such: 
 
 \begin{align}
   [R_nH] =  
@@ -181,11 +179,34 @@ Similarly, given that we are on a circular orbit, and that our reference is an i
 
 
 \section*{Task 5: GMO-Pointing Reference Frame Orientation}
-Now we must construct another reference frame $\mathcal{R}_c$ such that $\hat{\bm{i}}_r$ 
+Now we must construct another reference frame $\mathcal{R}_c$ such that $-\hat{\bm{r}}_1 = $ points towards the GMO spacecraft. This is simply done by finding the vector which represents the inertial difference in the position of both spacecraft: $\Delta\bm{r} = \bm{r}_{LMO} - \bm{r}_{GMO}$. We can then describe the frame with the following:
 
+\begin{align}
+  \hat{\bm{r}}_1 &= \frac{-\Delta\bm{r}}{\norm{\Delta\bm{r}}} \\ 
+  \hat{\bm{r}}_2 &= \frac{\Delta\bm{r} \times \hat{\bm{n}}_3}{\norm{\Delta\bm{r} \times \hat{\bm{n}}_3}} \\ 
+  \hat{\bm{r}}_3 &= \hat{\bm{r}}_1 \times \hat{\bm{r}}_2 
+\end{align}
+
+Stacking these unit vectors as such $[\hat{\bm{r}}_1 \ \hat{\bm{r}}_2 \ \hat{\bm{r}}_3 ]$ yields a rotation matrix that, when multiplied by, brings vectors from the tracking reference frame to the inertial frame. Therefore, under a transpose operation we get the following: 
+
+\begin{equation}
+  [R_cN] = [\hat{\bm{r}}_1 \ \hat{\bm{r}}_2 \ \hat{\bm{r}}_3 ]^T
+\end{equation}
+
+Finding $^N\bm{\omega}_{R_cN}$ is nontrivial and finding an analytical expression for the time derivative of the DCM can be challenging. Instead, we can use a numerical approach to find a usable solution. We know that the derivative of a DCM is that: $[\dot{C}] = -[\bm{\omega}^\times][C]$. Therefore we can find the angular rate with the following:
+
+
+
+\begin{align}
+  \frac{d[R_cN]}{dt} &= -[\bm{\omega_{R_cN}}^\times][R_cN] \\
+  \frac{[R_cN(t+dt)] - [R_cN(t)]}{dt} [NR_c] &= -[\bm{\omega_{R_cN}}^\times]
+\end{align}
+
+Because we know have a function that determines this reference DCM at any point in time, this numerical derivative is easy to calculate for a small value $dt$. With knowledge of the skew symmetric form, we can de-skew $[\bm{\omega_{R_cN}}^\times]$ to find our vector  $^{R_c}\bm{\omega_{R_cN}}$. To bring this quantity into the inertial frame we perform $^{N}\bm{\omega_{R_cN}} = [R_cN(t)]^T \ ^{R_c}\bm{\omega_{R_cN}}$.
 
 
 \section*{Task 6: Attitude Error Evaluation}
+In this section, we must write a function that, given 
 
 
 

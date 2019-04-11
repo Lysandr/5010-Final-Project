@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.3)  11 APR 2019 00:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.12)  11 APR 2019 16:20
 entering extended mode
 **./aiaaTemplate.tex
 (aiaaTemplate.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+LaTeX2e <2018-04-01> patch level 5
 (aiaaNew.cls
 Document Class: aiaaNew 1996/03/03 v1.0 AIAA document class
 
@@ -18,14 +17,14 @@ Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ize10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -92,7 +91,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -127,14 +126,16 @@ ek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
-\Hy@linkcounter=\count87
-\Hy@pagecounter=\count88
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count89
+\Hy@SavedSpaceFactor=\count90
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00mikt
 ex\hyperref.cfg"
@@ -148,7 +149,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count90
+\c@Hy@tempcnt=\count91
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\ur
 l.sty"
@@ -157,7 +158,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen106
-\Fld@menulength=\count91
+\Fld@menulength=\count92
 \Field@Width=\dimen107
 \Fld@charsize=\dimen108
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -169,17 +170,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count92
-\c@Item=\count93
-\c@Hfootnote=\count94
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\hpdftex.def"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count95
-\c@bookmark@seq@number=\count96
+\Fld@listcount=\count96
+\c@bookmark@seq@number=\count97
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
 ek\rerunfilecheck.sty"
@@ -217,8 +218,8 @@ Package caption2 Warning: ****************************************************
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\captio
 n\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen109
 \captionmargin@=\dimen110
 \captionwidth=\dimen111
@@ -228,7 +229,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen115
 )
 Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
-e 221.
+e 218.
 \captionlinewidth=\dimen116
 \realcaptionwidth=\dimen117
 )
@@ -276,13 +277,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 h\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count97
+\inf@bad=\count98
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count98
-\leftroot@=\count99
+\uproot@=\count99
+\leftroot@=\count100
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count100
-\DOTSCASE@=\count101
+\classnum@=\count101
+\DOTSCASE@=\count102
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -291,15 +292,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count102
-\c@MaxMatrixCols=\count103
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
 \dotsspace@=\muskip11
-\c@parentequation=\count104
-\dspbrk@lvl=\count105
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
 \tag@help=\toks16
-\row@=\count106
-\column@=\count107
-\maxfields@=\count108
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
 \andhelp@=\toks17
 \eqnshift@=\dimen121
 \alignsep@=\dimen122
@@ -332,10 +333,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip58
 \subfigcapmargin=\dimen128
 \subfiglabelskip=\skip59
-\c@subfigure=\count109
-\c@lofdepth=\count110
-\c@subtable=\count111
-\c@lotdepth=\count112
+\c@subfigure=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@lotdepth=\count113
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -357,7 +358,7 @@ tabls.sty"
 )
 \sfm@width=\skip62
 \sfm@colsep=\skip63
-\c@sfm@count=\count113
+\c@sfm@count=\count114
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\amssymb.sty"
@@ -392,22 +393,22 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 ages\xparse\xparse.sty"
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\expl3.sty"
-Package: expl3 2018-04-30 L3 programming layer (loader) 
+Package: expl3 2018-08-23 L3 programming layer (loader) 
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\expl3-code.tex"
-Package: expl3 2018-04-30 L3 programming layer (code)
-\c_max_int=\count114
-\l_tmpa_int=\count115
-\l_tmpb_int=\count116
-\g_tmpa_int=\count117
-\g_tmpb_int=\count118
-\g__kernel_prg_map_int=\count119
-\c_log_iow=\count120
-\l_iow_line_count_int=\count121
-\l__iow_line_target_int=\count122
-\l__iow_one_indent_int=\count123
-\l__iow_indent_int=\count124
+Package: expl3 2018-08-23 L3 programming layer (code)
+\c_max_int=\count115
+\l_tmpa_int=\count116
+\l_tmpb_int=\count117
+\g_tmpa_int=\count118
+\g_tmpb_int=\count119
+\g__kernel_prg_map_int=\count120
+\c_log_iow=\count121
+\l_iow_line_count_int=\count122
+\l__iow_line_target_int=\count123
+\l__iow_one_indent_int=\count124
+\l__iow_indent_int=\count125
 \c_zero_dim=\dimen135
 \c_max_dim=\dimen136
 \l_tmpa_dim=\dimen137
@@ -426,77 +427,78 @@ Package: expl3 2018-04-30 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count125
-\c__fp_leading_shift_int=\count126
-\c__fp_middle_shift_int=\count127
-\c__fp_trailing_shift_int=\count128
-\c__fp_big_leading_shift_int=\count129
-\c__fp_big_middle_shift_int=\count130
-\c__fp_big_trailing_shift_int=\count131
-\c__fp_Bigg_leading_shift_int=\count132
-\c__fp_Bigg_middle_shift_int=\count133
-\c__fp_Bigg_trailing_shift_int=\count134
-\c__fp_rand_size_int=\count135
-\c__fp_rand_four_int=\count136
-\c__fp_rand_eight_int=\count137
+\l_keys_choice_int=\count126
+\l__intarray_loop_int=\count127
 \c__intarray_sp_dim=\dimen141
-\g__intarray_font_int=\count138
-\l__sort_length_int=\count139
-\l__sort_min_int=\count140
-\l__sort_top_int=\count141
-\l__sort_max_int=\count142
-\l__sort_true_max_int=\count143
-\l__sort_block_int=\count144
-\l__sort_begin_int=\count145
-\l__sort_end_int=\count146
-\l__sort_A_int=\count147
-\l__sort_B_int=\count148
-\l__sort_C_int=\count149
-\l__tl_analysis_normal_int=\count150
-\l__tl_analysis_index_int=\count151
-\l__tl_analysis_nesting_int=\count152
-\l__tl_analysis_type_int=\count153
-\l__regex_internal_a_int=\count154
-\l__regex_internal_b_int=\count155
-\l__regex_internal_c_int=\count156
-\l__regex_balance_int=\count157
-\l__regex_group_level_int=\count158
-\l__regex_mode_int=\count159
-\c__regex_cs_in_class_mode_int=\count160
-\c__regex_cs_mode_int=\count161
-\l__regex_catcodes_int=\count162
-\l__regex_default_catcodes_int=\count163
-\c__regex_catcode_D_int=\count164
-\c__regex_catcode_S_int=\count165
-\c__regex_catcode_L_int=\count166
-\c__regex_catcode_O_int=\count167
-\c__regex_catcode_A_int=\count168
-\c__regex_all_catcodes_int=\count169
-\l__regex_show_lines_int=\count170
-\l__regex_min_state_int=\count171
-\l__regex_max_state_int=\count172
-\l__regex_left_state_int=\count173
-\l__regex_right_state_int=\count174
-\l__regex_capturing_group_int=\count175
-\l__regex_min_pos_int=\count176
-\l__regex_max_pos_int=\count177
-\l__regex_curr_pos_int=\count178
-\l__regex_start_pos_int=\count179
-\l__regex_success_pos_int=\count180
-\l__regex_curr_char_int=\count181
-\l__regex_curr_catcode_int=\count182
-\l__regex_last_char_int=\count183
-\l__regex_case_changed_char_int=\count184
-\l__regex_curr_state_int=\count185
-\l__regex_step_int=\count186
-\l__regex_min_active_int=\count187
-\l__regex_max_active_int=\count188
-\l__regex_replacement_csnames_int=\count189
-\l__regex_match_count_int=\count190
-\l__regex_min_submatch_int=\count191
-\l__regex_submatch_int=\count192
-\l__regex_zeroth_submatch_int=\count193
-\g__regex_trace_regex_int=\count194
+\g__intarray_font_int=\count128
+\c__fp_leading_shift_int=\count129
+\c__fp_middle_shift_int=\count130
+\c__fp_trailing_shift_int=\count131
+\c__fp_big_leading_shift_int=\count132
+\c__fp_big_middle_shift_int=\count133
+\c__fp_big_trailing_shift_int=\count134
+\c__fp_Bigg_leading_shift_int=\count135
+\c__fp_Bigg_middle_shift_int=\count136
+\c__fp_Bigg_trailing_shift_int=\count137
+\c__kernel_randint_max_int=\count138
+\g__fp_array_int=\count139
+\l__fp_array_loop_int=\count140
+\l__sort_length_int=\count141
+\l__sort_min_int=\count142
+\l__sort_top_int=\count143
+\l__sort_max_int=\count144
+\l__sort_true_max_int=\count145
+\l__sort_block_int=\count146
+\l__sort_begin_int=\count147
+\l__sort_end_int=\count148
+\l__sort_A_int=\count149
+\l__sort_B_int=\count150
+\l__sort_C_int=\count151
+\l__tl_analysis_normal_int=\count152
+\l__tl_analysis_index_int=\count153
+\l__tl_analysis_nesting_int=\count154
+\l__tl_analysis_type_int=\count155
+\l__regex_internal_a_int=\count156
+\l__regex_internal_b_int=\count157
+\l__regex_internal_c_int=\count158
+\l__regex_balance_int=\count159
+\l__regex_group_level_int=\count160
+\l__regex_mode_int=\count161
+\c__regex_cs_in_class_mode_int=\count162
+\c__regex_cs_mode_int=\count163
+\l__regex_catcodes_int=\count164
+\l__regex_default_catcodes_int=\count165
+\c__regex_catcode_D_int=\count166
+\c__regex_catcode_S_int=\count167
+\c__regex_catcode_L_int=\count168
+\c__regex_catcode_O_int=\count169
+\c__regex_catcode_A_int=\count170
+\c__regex_all_catcodes_int=\count171
+\l__regex_show_lines_int=\count172
+\l__regex_min_state_int=\count173
+\l__regex_max_state_int=\count174
+\l__regex_left_state_int=\count175
+\l__regex_right_state_int=\count176
+\l__regex_capturing_group_int=\count177
+\l__regex_min_pos_int=\count178
+\l__regex_max_pos_int=\count179
+\l__regex_curr_pos_int=\count180
+\l__regex_start_pos_int=\count181
+\l__regex_success_pos_int=\count182
+\l__regex_curr_char_int=\count183
+\l__regex_curr_catcode_int=\count184
+\l__regex_last_char_int=\count185
+\l__regex_case_changed_char_int=\count186
+\l__regex_curr_state_int=\count187
+\l__regex_step_int=\count188
+\l__regex_min_active_int=\count189
+\l__regex_max_active_int=\count190
+\l__regex_replacement_csnames_int=\count191
+\l__regex_match_count_int=\count192
+\l__regex_min_submatch_int=\count193
+\l__regex_submatch_int=\count194
+\l__regex_zeroth_submatch_int=\count195
+\g__regex_trace_regex_int=\count196
 \c_empty_box=\box28
 \l_tmpa_box=\box29
 \l_tmpb_box=\box30
@@ -538,25 +540,25 @@ Package: expl3 2018-04-30 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen164
 \l__coffin_scaled_total_height_dim=\dimen165
 \l__coffin_scaled_width_dim=\dimen166
-\l__seq_internal_a_int=\count195
-\l__seq_internal_b_int=\count196
+\l__seq_internal_a_int=\count197
+\l__seq_internal_b_int=\count198
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\l3pdfmode.def"
-File: l3pdfmode.def 2018-04-30 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count197
+File: l3pdfmode.def 2018-08-23 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count199
 ))
-Package: xparse 2018-04-30 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count198
-\g__xparse_grabber_int=\count199
-\l__xparse_m_args_int=\count266
-\l__xparse_mandatory_args_int=\count267
-\l__xparse_v_nesting_int=\count268
+Package: xparse 2018-08-23 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count266
+\g__xparse_grabber_int=\count267
+\l__xparse_m_args_int=\count268
+\l__xparse_mandatory_args_int=\count269
+\l__xparse_v_nesting_int=\count270
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolb
 ox\etoolbox.sty"
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count269
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
 ek\zref-abspage.sty"
@@ -569,7 +571,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count270
+\c@abspage=\count272
 Package zref Info: New property: abspage on input line 62.
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\needsp
@@ -587,7 +589,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 \mdf@templength=\skip73
-\c@mdf@globalstyle@cnt=\count271
+\c@mdf@globalstyle@cnt=\count273
 \mdf@skipabove@length=\skip74
 \mdf@skipbelow@length=\skip75
 \mdf@leftmargin@length=\skip76
@@ -664,7 +666,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip137
 \mdfsubtitleheight=\skip138
 \mdfsubsubtitleheight=\skip139
-\c@mdfcountframes=\count272
+\c@mdfcountframes=\count274
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -680,10 +682,10 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count273
-\c@mdf@env@i=\count274
-\c@mdf@env@ii=\count275
-\c@mdf@zref@counter=\count276
+\mdf@envdepth=\count275
+\c@mdf@env@i=\count276
+\c@mdf@env@ii=\count277
+\c@mdf@zref@counter=\count278
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algori
@@ -694,7 +696,7 @@ nment
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\
 float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count277
+\c@float@type=\count279
 \float@exts=\toks26
 \float@box=\box48
 \@float@everytoks=\toks27
@@ -705,7 +707,7 @@ fthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks28
-\c@algorithm=\count278
+\c@algorithm=\count280
 ) (aiaaTemplate.aux)
 \openout1 = `aiaaTemplate.aux'.
 
@@ -736,16 +738,16 @@ Package lastpage Info: Please have a look at the pageslts package at
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\context\base
 \supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
+\scratchcounter=\count281
 \scratchdimen=\dimen167
 \scratchbox=\box50
-\nofMPsegments=\count280
-\nofMParguments=\count281
+\nofMPsegments=\count282
+\nofMParguments=\count283
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count282
+\MPscratchCnt=\count284
 \MPscratchDim=\dimen168
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
 \everyMPtoPDFconversion=\toks30
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
@@ -774,7 +776,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 diek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count285
+\c@section@level=\count287
 )
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
@@ -844,17 +846,17 @@ s been already used, duplicate ignored
 \start@align ...currenvir }{}\@gobble }\fi \else $
                                                   $\let \split \insplit@ \DN...
 l.131 \begin{align}
-                    <./Figures/framedef.PNG>] (aiaaTemplate.bbl
+                    <./Figures/framedef.PNG>] [3] (aiaaTemplate.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
 ) 
 AED: lastpage setting LastPage
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
  (aiaaTemplate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
 
 
  *File List*
@@ -881,7 +883,7 @@ ifluatex.sty    2016/05/16 v1.4 Provides the ifluatex switch (HO)
 etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 kvsetkeys.sty    2016/05/16 v1.17 Key value parser (HO)
 kvdefinekeys.sty    2016/05/16 v1.4 Define keys (HO)
-pdftexcmds.sty    2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+pdftexcmds.sty    2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
 pdfescape.sty    2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
   bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
@@ -904,7 +906,7 @@ rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 overcite.sty    2003/05/27  v 4.0
     cite.sty    2015/02/27  v 5.5
 caption2.sty    2015/09/15 v2.2-100 Customising captions (AR)
-caption3.sty    2016/05/22 v1.7-166 caption3 kernel (AR)
+caption3.sty    2018/05/27 v1.8a caption3 kernel (AR)
 fancyhdr.sty    2017/06/30 v3.9a Extensive control of page headers and footers
    times.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
  amsmath.sty    2017/09/02 v2.17a AMS math features
@@ -920,11 +922,11 @@ subfigure.cfg
 amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
   amsthm.sty    2017/10/31 v2.20.4
 mdframed.sty    2013/07/01 1.9b: mdframed
-  xparse.sty    2018-04-30 L3 Experimental document command parser
-   expl3.sty    2018-04-30 L3 programming layer (loader) 
-expl3-code.tex    2018-04-30 L3 programming layer 
-l3pdfmode.def    2018-04-30 v L3 Experimental driver: PDF mode
-etoolbox.sty    2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+  xparse.sty    2018-08-23 L3 Experimental document command parser
+   expl3.sty    2018-08-23 L3 programming layer (loader) 
+expl3-code.tex    2018-08-23 L3 programming layer 
+l3pdfmode.def    2018-08-23 v L3 Experimental driver: PDF mode
+etoolbox.sty    2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 zref-abspage.sty    2016/05/21 v2.26 Module abspage for zref (HO)
 zref-base.sty    2016/05/21 v2.26 Module base for zref (HO)
 needspace.sty    2010/09/12 v1.3d reserve vertical space
@@ -950,19 +952,19 @@ Figures/framedef.PNG
 aiaaTemplate.bbl
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 Package rerunfilecheck Info: File `aiaaTemplate.out' has not changed.
 (rerunfilecheck)             Checksum: 2862FD42FCB41A7C20C04EA76A62A3F2;147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
- 16954 strings out of 493305
- 309185 string characters out of 3124581
- 384184 words of memory out of 3000000
- 20296 multiletter control sequences out of 15000+200000
- 556745 words of font info for 85 fonts, out of 3000000 for 9000
+ 17662 strings out of 492973
+ 312855 string characters out of 3121374
+ 394761 words of memory out of 3000000
+ 21315 multiletter control sequences out of 15000+200000
+ 558811 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,16n,45p,10425b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,16n,65p,954b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -976,19 +978,23 @@ Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Padraig Lysand
 rou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pf
 b><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Padraig Lysandrou/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
-sers/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Padraig Lysandrou/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Padraig Ly
-sandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
-Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on aiaaTemplate.pdf (3 pages, 190363 bytes).
+lic/amsfonts/cmextra/cmmib5.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Padraig
+ Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Padraig Lysand
+rou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+<C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Padraig Lysandrou/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Padra
+ig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on aiaaTemplate.pdf (4 pages, 219926 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  30 words of extra memory for PDF output out of 10000 (max. 10000000)
 
