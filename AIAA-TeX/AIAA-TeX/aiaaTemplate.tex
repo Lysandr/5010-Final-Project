@@ -1,6 +1,6 @@
 \documentclass[paper]{aiaaNew}
 
-\usepackage{esevct}
+% \usepackage{esevct}
 \usepackage{amssymb}
 \usepackage{bm}
 \usepackage{amsthm}% http://ctan.org/pkg/amsthm
@@ -8,6 +8,9 @@
 \usepackage[linewidth=1pt]{mdframed}
 \usepackage{graphicx}
 \usepackage{algorithm}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+% \usepackage{longtable,tabularx}
+% \usepackage[utf8]{inputenc}
 
 
 % \newenvironment{proof}
@@ -19,41 +22,32 @@
 
 
 \SubmitName{Lysandrou}
-
 % for conference paper:
-
 \PaperNumber{xxx}
-
 \CoverFigure{}
-
 \Conference{{\bfseries AIAA Guidance, Navigation and \\ Control 
 Conference} \\
             August 10--12,~1998 / Boston, MA}
 
 % for a journal simulation cover page:
-
 \JournalName{Journal of Guidance, Navigation and Control}
 \JournalIssue{Volume~xx, Number~xx, Jan.--Feb., 2001, Pages xx--xx}
-
 % journal article simulation:
-
 \ArticleIssue{Vol.~24, No.~1, Jan.--Feb., 2001}% first page
 \ArticleHeader{Schaub Et Al: New Penalty Functions}% subsequent pages
-
 % journal note simulation:
-
 \NoteHeader{J.Guidance, Vol.~20, No.~13: Engineering Notes}
-
 % set copyright and other notices to appear
 % as a footnote at the bottom of the first page:
-
 %\PaperNotice{\CopyrightB{1998}{Hanspeter Schaub}}
-
 \JournalNotice{Presented as Paper~06--3792 at the AIAA
                Guidance, Navigation and Control Conference, San 
 Diego,~CA,               July~29--31,~1996.
                \CopyrightB{1996}{the authors}}
 % load the title, author, and abstract for use with the \maketitle command
+
+
+
 
 \title{Attitude Dynamics and Control of a Nano-Satellite Orbiting Mars}
 \author{Padraig S. Lysandrou
@@ -63,30 +57,21 @@ Diego,~CA,               July~29--31,~1996.
 }
 
 \abstract{
-Abstract should be around 200--300 words.  Explain briefly what the problem is, how does the presented work contribute.  Summarize the paper results
-}
-
+This project for ASEN5010 Spacecraft Dynamics and Control considers a small satellite orbiting Mars at a low altitude. This spacecraft gathers science data and transfers this data to another satellite orbiting at a higher altitude. Periodically, this spacecraft must transition from nadir-pointing, science gathering mode to sun-pointing mode to recharge the battery system. The three missions goals are nadir-pointing, communicating with the mother spacecraft, and to sun-point. Both of these spacecraft are in circular orbits.}
 
 \begin{document}
-
-
 \maketitle
 \clearpage
 \section{Introduction}
 
-
-
- \subsection{Testing of a Subsection}
- \subsubsection{Testing of a Subsection}
-
 \section{Problem Statement}
-Let us begin with defining the orbit with the following figure
+Let us begin with defining the orbit of the nano-satellite with the following figure
 
 
 \begin{figure}[!htbp] 
   \centering
-  \includegraphics[width=0.5\textwidth]{\Figures/framedef.PNG}
-  \caption{Illustration of the Inertial, Hill, and perifocal geometrical constructions.}
+  \includegraphics[width=0.5\textwidth]{Figures/framedef.PNG}
+  \caption{Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet.}
   \label{fig:succ}
  \end{figure}
 
@@ -101,17 +86,111 @@ Our Hill frame is defined by the basis: $\{\bm{\hat{i}}_r, \bm{\hat{i}}_\theta, 
 	&= r\dot{\theta} \bm{\hat{i}}_\theta
 \end{align}
 
-Additionally, we can use this information to find the inertial position and velocity vectors by performing transformations using the perifocal frame information. We know that the perifocal frame can be defined by an Euler 3-1-3 rotation.  
+Additionally, we can use this information to find the inertial position and velocity vectors by performing transformations using the perifocal frame information. We know that the perifocal frame can be defined by an Euler 3-1-3 rotation defined the set $\{\Omega, i, \theta \}$
+
+\begin{equation}
+C_{ECI} = 
+\begin{bmatrix}
+\cos{\theta} & \sin{\theta} & 0 \\
+-\sin{\theta} & \cos{\theta} & 0 \\
+0 & 0 & 1 
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & \cos{i} & \sin{i} \\
+0 & -\sin{i} & \cos{i} \\
+\end{bmatrix}
+\begin{bmatrix}
+\cos{\Omega} & \sin{\Omega} & 0 \\
+-\sin{\Omega} & \cos{\Omega} & 0 \\
+0 & 0 & 1 
+\end{bmatrix}
+\end{equation}
+
+Which describes a rotation from Earth Centered Inertial frame. Each portion of the DCM is a single-axis rotation. We can then use this to project scalar values in the Hill frame to inertial vectors with the following:
+
+\begin{align}
+  ^N\vec{\bm{r}} &= C_{ECI}^T 
+  \begin{bmatrix}
+  r \\ 0 \\ 0
+  \end{bmatrix} \\
+  ^N\vec{\bm{v}} &= C_{ECI}^T
+  \begin{bmatrix}
+  0 \\ r\dot{\theta} \\ 0
+  \end{bmatrix}
+\end{align}
+
+When the ECI direction cosine matrix is calculated, $\theta$ must be propagated over time, as the true anomaly is the only perifocal parameter that is time variant. It is calculate as such: $\theta = \theta_0 + t*\dot{\theta}$.
+
+
+
+
+\section*{Task 2: Orbit Frame Orientation}
+It is simple to generate bases vectors for the Hill frame, under motion, using our new inertial vectors. As stated before, $\mathcal{H} = \{\bm{\hat{i}}_r, \bm{\hat{i}}_\theta, \bm{\hat{i}}_h \}$, which can be constructed with the following:
+
+\begin{align}
+  \hat{\bm{i}_r} &= \frac{\bm{r}_{LM}}{\norm{\bm{r}_{LM}}} \\
+  \hat{\bm{i}_\theta} &= \hat{\bm{i}_h} \times \hat{\bm{i}_r} \\
+  \hat{\bm{i}_h} &= \frac{\bm{r}_{LM} \times \dot{\bm{r}}_{LM}}{\norm{\bm{r}_{LM} \times \dot{\bm{r}}_{LM}}}
+\end{align}
+
+If we stack up these vectors into a matrix $[\hat{\bm{i}_r} \ \hat{\bm{i}_\theta} \ \hat{\bm{i}_h}]$, this defines the direction cosine matrix which takes vectors in the Hill frame to the inertial frame: $[NH]$. We can take the transpose to find the opposite: $[HN] = [\hat{\bm{i}_r} \ \hat{\bm{i}_\theta} \ \hat{\bm{i}_h}]^T$.
+
+
+
+
+\section*{Task 3: Sun-Pointing Reference Frame Orientation}
+The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a reference frame $\mathcal{R}_s$ must be generated such that $\hat{\bm{r}}_3$ points in the sun direction ($\hat{\bm{n}}_2$). Given that the solar reference frame is constant with respect to the inertial frame, the $^N\bm{\omega}_{R_s N} = \bm{0}$. And our DCM is constructed with the following: 
+
+
+\begin{align}
+  [R_sN] =  
+  \begin{bmatrix}
+  -1 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & 1 & 0
+  \end{bmatrix}
+\end{align}
+
+\section*{Task 4: Nadir-Pointing Reference Frame Orientation}
+In order to point the payload platform axis $\hat{\bm{b}}_1$ towards Mars in the nadir direction, the reference frame $\mathcal{R}_n$ must be constructed such that $\hat{\bm{n}}_1$ points towards the planet. Additionally, we assume that $\hat{\bm{r}}_2$ is in the direction of the velocity $\hat{\bm{i}}_\theta$. 
+
+Therefore we can construct a Hill-to-reference DCM which, using our now stated definitions, follows as such: 
+
+\begin{align}
+  [R_nH] =  
+  \begin{bmatrix}
+  -1 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & -1
+  \end{bmatrix}
+\end{align}
+
+This is the manifestation of a simple $\pi$ rotation about the second Hill axis, where the reference flips $\hat{\bm{i}}_r$ and $\hat{\bm{i}}_h$. We can then calculate $[HN]$ using our procedure from Task 2. We then generate $[R_nN]$ via the following:
+
+\begin{equation}
+  [R_nN] = [R_nH][HN]
+\end{equation}
+
+Similarly, given that we are on a circular orbit, and that our reference is an invariant transformation from the Hill frame, we can easily describe $^N \bm{\omega}_{R_nN}$. Given that the reference and Hill angular rates are similar, we know that $^H \bm{\omega}_{R_nN} = [0 \ 0 \ \dot{\theta}]^T$ and can supply the reference angular rate with the following
+
+
+\begin{equation}
+  ^N \bm{\omega}_{R_nN} = [HN]^T \ ^H \bm{\omega}_{R_nN} = [NH][0 \ 0 \ \dot{\theta}]^T
+\end{equation}
+
+
+\section*{Task 5: GMO-Pointing Reference Frame Orientation}
+Now we must construct another reference frame $\mathcal{R}_c$ such that $\hat{\bm{i}}_r$ 
+
+
+
+\section*{Task 6: Attitude Error Evaluation}
 
 
 
 
 
-
-
-
-
-\section{Numerical Simulations}
 
 \section{Conclusion}
 
