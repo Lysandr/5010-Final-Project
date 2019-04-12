@@ -8,6 +8,7 @@
 \usepackage[linewidth=1pt]{mdframed}
 \usepackage{graphicx}
 \usepackage{algorithm}
+\usepackage{algpseudocode}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 % \usepackage{longtable,tabularx}
 % \usepackage[utf8]{inputenc}
@@ -125,6 +126,9 @@ When the ECI direction cosine matrix is calculated, $\theta$ must be propagated 
 
 
 
+
+
+
 \section*{Task 2: Orbit Frame Orientation}
 It is simple to generate bases vectors for the Hill frame, under motion, using our new inertial vectors. As stated before, $\mathcal{H} = \{\bm{\hat{i}}_r, \bm{\hat{i}}_\theta, \bm{\hat{i}}_h \}$, which can be constructed with the following:
 
@@ -139,10 +143,13 @@ If we stack up these vectors into a matrix $[\hat{\bm{i}_r} \ \hat{\bm{i}_\theta
 
 
 
+
+
+
+
+
 \section*{Task 3: Sun-Pointing Reference Frame Orientation}
 The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a reference frame $\mathcal{R}_s$ must be generated such that $\hat{\bm{r}}_3$ points in the sun direction ($\hat{\bm{n}}_2$). Given that the solar reference frame is constant with respect to the inertial frame, the $^N\bm{\omega}_{R_s N} = \bm{0}$. And our DCM is easily constructed using our assumptions with the following: 
-
-
 \begin{align}
   [R_sN] =  
   \begin{bmatrix}
@@ -151,6 +158,13 @@ The solar panel axis $\hat{\bm{b}}_3$ must be pointed at the sun, and a referenc
   0 & 1 & 0
   \end{bmatrix}
 \end{align}
+
+
+
+
+
+
+
 
 \section*{Task 4: Nadir-Pointing Reference Frame Orientation}
 In order to point the payload platform axis $\hat{\bm{b}}_1$ towards Mars in the nadir direction, the reference frame $\mathcal{R}_n$ must be constructed such that $\hat{\bm{r}}_1$ points towards the planet. Additionally, we assume that $\hat{\bm{r}}_2$ is in the direction of the velocity $\hat{\bm{i}}_\theta$. Therefore we easily can construct a Hill-to-reference DCM which, using our now stated definitions, follows as such: 
@@ -176,6 +190,11 @@ Similarly, given that we are on a circular orbit, and that our reference is an i
 \begin{equation}
   ^N \bm{\omega}_{R_nN} = [HN]^T \ ^H \bm{\omega}_{R_nN} = [NH][0 \ 0 \ \dot{\theta}]^T
 \end{equation}
+
+
+
+
+
 
 
 \section*{Task 5: GMO-Pointing Reference Frame Orientation}
@@ -205,8 +224,98 @@ Finding $^N\bm{\omega}_{R_cN}$ is nontrivial and finding an analytical expressio
 Because we know have a function that determines this reference DCM at any point in time, this numerical derivative is easy to calculate for a small value $dt$. With knowledge of the skew symmetric form, we can de-skew $[\bm{\omega_{R_cN}}^\times]$ to find our vector  $^{R_c}\bm{\omega_{R_cN}}$. To bring this quantity into the inertial frame we perform $^{N}\bm{\omega_{R_cN}} = [R_cN(t)]^T \ ^{R_c}\bm{\omega_{R_cN}}$.
 
 
-\section*{Task 6: Attitude Error Evaluation}
-In this section, we must write a function that, given a current attitude state $\bm{\sigma}_{BN}$, angular rate $^B\bm{\omega}_{BN}$, and desired reference attitude matrix
+
+
+
+
+\section*{Task 6: Attitude and Angular Rate Error Evaluation}
+In this section, we must write a function that, given a current attitude state $\bm{\sigma}_{BN}$, angular rate $^B\bm{\omega}_{BN}$, and desired reference attitude matrix $[RN]$, returns the associate tracking errors $\bm{\sigma}_{BR}$ and $^B\bm{\omega}_{BR}$. First let us start with the simpler angular velocity error:
+
+\begin{equation}
+  ^B\bm{\omega}_{BR} = (^B\bm{\omega}_{BN} - [BN] \ ^N\bm{\omega}_{RN})
+\end{equation}
+
+We can find the inertial to body DCM transform by performing $\text{MRP2C}(\bm{\sigma}_{BN})$ with the following function:
+
+\begin{equation}
+  [BN]=\frac{1}{\left(1+\sigma^{2}\right)^{2}}
+  \begin{bmatrix}
+    {4\left(\sigma_{1}^{2}-\sigma_{2}^{2}-\sigma_{3}^{2}\right)+\left(1-\sigma^{2}\right)^{2}} & {8 \sigma_{1} \sigma_{2}+4 \sigma_{3}\left(1-\sigma^{2}\right)} & {8 \sigma_{1} \sigma_{3}-4 \sigma_{2}\left(1-\sigma^{2}\right)} \\
+    {8 \sigma_{2} \sigma_{1}-4 \sigma_{3}\left(1-\sigma^{2}\right)} & {4\left(-\sigma_{1}^{2}+\sigma_{2}^{2}-\sigma_{3}^{2}\right)+\left(1-\sigma^{2}\right)^{2}} & {8 \sigma_{2} \sigma_{3}+4 \sigma_{1}\left(1-\sigma^{2}\right)} \\
+    {8 \sigma_{3} \sigma_{1}+4 \sigma_{2}\left(1-\sigma^{2}\right)} & {8 \sigma_{3} \sigma_{2}-4 \sigma_{1}\left(1-\sigma^{2}\right)} & {4\left(-\sigma_{1}^{2}-\sigma_{2}^{2}+\sigma_{3}^{2}\right)+\left(1-\sigma^{2}\right)^{2}} \\
+  \end{bmatrix}
+\end{equation}
+
+Now that we have the tracking error for the angular velocity, we must find the relative error in the modified rodrigues parameter attitude formalism. We could use the relative MRP formula, but it can be understood more easily by converting to DCMs and using fundamental properties of the SO(3) group: 
+
+\begin{equation}
+  \bm{\sigma}_{BR} = \text{C2MRP}([BN][RN]^T)
+\end{equation}
+
+The DCM to MRP transform is more complicated and is done by first converting the DCM to a quaternion via Sheppard's method. The first step is to find the maximum of these values, as truth, to constrain that value for the second step:
+
+\begin{equation}
+  \begin{array}{ll}{\beta_{0}^{2}=\frac{1}{4}(1+\operatorname{tr}([BR]))} & {\beta_{2}^{2}=\frac{1}{4}\left(1+2 [BR]_{22}-\operatorname{tr}([BR])\right)} \\ {\beta_{1}^{2}=\frac{1}{4}\left(1+2 [BR]_{11}-\operatorname{tr}([BR])\right)} & {\beta_{3}^{2}=\frac{1}{4}\left(1+2 [BR]_{33}-\operatorname{tr}([BR])\right)}\end{array}
+\end{equation}
+
+The second step is done by computing the rest of the quaternion entries, using our constrained entry, with the following: 
+
+\begin{equation}
+  \begin{array}{ll}{\beta_{0} \beta_{1}=\left([BR]_{23}-[BR]_{32}\right) / 4} & {\beta_{1} \beta_{2}=\left([BR]_{12}+[BR]_{21}\right) / 4} \\ {\beta_{0} \beta_{2}=\left([BR]_{31}-[BR]_{13}\right) / 4} & {\beta_{3} \beta_{1}=\left([BR]_{31}+[BR]_{13}\right) / 4} \\ {\beta_{0} \beta_{3}=\left([BR]_{12}-[BR]_{21}\right) / 4} & {\beta_{2} \beta_{3}=\left([BR]_{23}+[BR]_{32}\right) / 4}\end{array}
+\end{equation}
+
+The final MRP is calculated with from our quaternion entries using the definition:
+
+\begin{equation}
+  \bm{\sigma}_{BR} = \begin{bmatrix}
+  \frac{\beta_1}{1+\beta_0} \\
+  \frac{\beta_2}{1+\beta_0} \\
+  \frac{\beta_3}{1+\beta_0} 
+  \end{bmatrix}
+\end{equation}
+
+
+
+
+
+
+\section*{Task 7: Numerical Attitude Simulator}
+Now we must numerically integrate our differential equations of motion to simulate the dynamics of our system for both the LMO and GMO spacecraft. Let us define our state vector as the following: 
+
+\begin{equation}
+  \bm{X} = \begin{bmatrix}
+  \bm{\sigma}_{BN} \\
+  ^B\bm{\omega}_{BR}
+  \end{bmatrix}
+\end{equation}
+
+For $\bm{u}$ control torque vector, the rigid body dynamics obey the following:
+
+\begin{equation}
+  [I]\bm{\dot{\omega}}_{BN} = -[\omega_{BN}^\times][I]\bm{\omega}_{BN} + \bm{u}
+\end{equation}
+
+We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the nonlinear dynamics function $\dot{\bm{X}} = f(t,\bm{X})$, the integration algorithm is:
+
+
+
+\begin{algorithm}
+\caption{Fourth Order Runge Kutte Integrator}\label{RK4}
+\begin{algorithmic}[1]
+\For{i = 1:N-1} 
+    \State $ k_1 = \dot{\bm{X}}(t(i), \ \bm{X}(:,i))$
+    \State $ k_2 = \dot{\bm{X}}(t(i)+ \frac{dt}{2}, \  \bm{X}(:,i)+ \frac{dt}{2} k_1)$
+    \State $ k_3 = \dot{\bm{X}}(t(i)+ \frac{dt}{2}, \ \bm{X}(:,i)+ \frac{dt}{2} k_2)$
+    \State $ k_4 = \dot{\bm{X}}(t(i)+dt,  \ \bm{X}(:,i) + dt k_3)$
+    \State $ \bm{X}(:,i+1) =  \bm{X}(:,i) + \frac{dt}{6}(k_1+2k_2+2k_3+k_4)$
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+Each point $i \in [1:N]$ is 1 integration step of time, and the full simulation time is therefore $dtN$. Using this simulation framework, we can study our angular momentum $\bm{H} = [I]\bm{\omega}_{BN}$ and kinetic energy $T = \frac{1}{2} \bm{\omega}_{BN}^T [I] \bm{\omega}_{BN}$ over time.
+
+
+% for i = 1:npoints-1
 
 
 
