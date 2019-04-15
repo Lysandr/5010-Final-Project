@@ -12,7 +12,7 @@ function f_x = dynamics(~,state_in,p)
         + (2*sigma_BN*(sigma_BN.'))))*omega_BN;
     
     % Angular Rate Integration
-    omega_dot = (-skew(omega_BN)*(Ic*omega_BN)) + Ic\p.L;
+    omega_dot = Ic\((-skew(omega_BN)*(Ic*omega_BN)) + p.L);
     
     % Send out the derivative
     f_x = [sigma_dot.' omega_dot.'].'; 

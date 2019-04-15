@@ -17,19 +17,21 @@ theta_dot_GMO = 0.0000709003;
 
 tend = 500;
 % tend = 100;
-dt = 0.01;
+
+dt = 1;
 t = 0:dt:tend;
 npoints = length(t);
 f_dot = @(t_in,state_in,param) dynamics(t_in,state_in,param);
 vehicle_state = zeros(6,npoints);
 vehicle_state(:,1) = [sigma_BN_0; omega_BN_B_0];
 p.L = [0 0 0].';
+% p.L = [0.01 -0.01 0.02].';
+
 
 H = zeros(3,npoints);
 H(:,1) = Ic*omega_BN_B_0;
 T = zeros(1,npoints);
 T(1) = 0.5*omega_BN_B_0.'*Ic*omega_BN_B_0; 
-% p.L = [0.01 -0.01 0.02].';
 
 tic
 for i = 1:npoints-1
@@ -55,24 +57,23 @@ end
 toc
 
 
-figure; plot(t, H(1,:)); hold on;
-plot(t, H(2,:)); hold on;
-plot(t, H(3,:));
+figure; plot(t, H); title('angular momentum');
+figure; plot(t, vehicle_state(1:3,:)); title('mrps over time')
+figure; plot(t, vehicle_state(4:6,:)); title('omegas over time')
+figure; plot(t, vecnorm(H)); title('H norm over time')
 
-figure; plot(t, vecnorm(H));
-
-save_to_txt('H500B.txt',H(:,end-1));
+save_to_txt('H500B.txt', H(:,end));
 
 figure; semilogy(t, T);
 save_to_txt('T500.txt',T(end));
 
 save_to_txt('MRP500.txt',vehicle_state(1:3,end));
-
 % I think this is just the hill frame...
 save_to_txt('H500N.txt', MRP2C(vehicle_state(1:3,end)).'*H(:,end));
 
-% save_to_txt('MRP100u.txt',vehicle_state(1:3,end));
-
+if tend == 100
+    save_to_txt('MRP100u.txt',vehicle_state(1:3,end));
+end
 
 
 
