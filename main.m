@@ -12,12 +12,12 @@ r_LMO = h_LMO + R_M;
 theta_dot_LMO = sqrt(mu_M / (r_LMO^3)); % rad/s, orbital angular rate(circ)
 
 r_GMO = 20424.2;
-theta_dot_GMO = sqrt(mu_M / (r_GMO^3)); % rad/s, orbital angular rate(circ)
+theta_dot_GMO = sqrt(mu_M / (r_GMO^3)) % rad/s, orbital angular rate(circ)
 theta_dot_GMO = 0.0000709003;
 
-
 tend = 500;
-dt = 0.001;
+% tend = 100;
+dt = 0.01;
 t = 0:dt:tend;
 npoints = length(t);
 f_dot = @(t_in,state_in,param) dynamics(t_in,state_in,param);
@@ -29,7 +29,6 @@ H = zeros(3,npoints);
 H(:,1) = Ic*omega_BN_B_0;
 T = zeros(1,npoints);
 T(1) = 0.5*omega_BN_B_0.'*Ic*omega_BN_B_0; 
-
 % p.L = [0.01 -0.01 0.02].';
 
 tic
@@ -59,13 +58,17 @@ toc
 figure; plot(t, H(1,:)); hold on;
 plot(t, H(2,:)); hold on;
 plot(t, H(3,:));
-save_to_txt('H500B.txt',H(:,end));
+
+figure; plot(t, vecnorm(H));
+
+save_to_txt('H500B.txt',H(:,end-1));
 
 figure; semilogy(t, T);
 save_to_txt('T500.txt',T(end));
 
 save_to_txt('MRP500.txt',vehicle_state(1:3,end));
 
+% I think this is just the hill frame...
 save_to_txt('H500N.txt', MRP2C(vehicle_state(1:3,end)).'*H(:,end));
 
 % save_to_txt('MRP100u.txt',vehicle_state(1:3,end));
