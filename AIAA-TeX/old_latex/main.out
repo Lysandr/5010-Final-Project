@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Problem Description}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Dynamics}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Constraints and Boundary Conditions}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Continuous Time Problem}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Convex Form}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Linearization}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Discretization Scheme}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Successive Form, Trust Regions and Relaxations}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Convex Sub-Problem}{subsection.3.3}% 10
+\BOOKMARK [1][-]{section.4}{Algorithm}{}% 11
+\BOOKMARK [1][-]{section.5}{Dimensionalized Simulation Results}{}% 12
+\BOOKMARK [1][-]{section.6}{Attitude Trajectory Tracking with Cold Gas Thrusters}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Simulation Framework}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Starting At Nominal Attitude}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Starting At Off-Nominal Attitude and Angular Rate}{section.6}% 16
+\BOOKMARK [1][-]{section.7}{Conclusions and Future Work}{}% 17
+\BOOKMARK [1][-]{section.8}{Acknowledgments}{}% 18

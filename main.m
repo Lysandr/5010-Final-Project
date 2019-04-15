@@ -61,7 +61,6 @@ figure; plot(t, H); title('angular momentum');
 figure; plot(t, vehicle_state(1:3,:)); title('mrps over time')
 figure; plot(t, vehicle_state(4:6,:)); title('omegas over time')
 figure; plot(t, vecnorm(H)); title('H norm over time')
-
 save_to_txt('H500B.txt', H(:,end));
 
 figure; semilogy(t, T);
