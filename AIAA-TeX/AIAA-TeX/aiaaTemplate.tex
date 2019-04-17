@@ -1,6 +1,4 @@
 \documentclass[paper]{aiaaNew}
-
-% \usepackage{esevct}
 \usepackage{amssymb}
 \usepackage{bm}
 \usepackage{amsthm}% http://ctan.org/pkg/amsthm
@@ -22,14 +20,13 @@
 \usepackage{commath}
 \usepackage{listings}
 \usepackage[version=4]{mhchem}
-\usepackage{siunitx}
+\usepackage{siunitx}[]
 \usepackage{algorithm}
 \usepackage[linewidth=1pt]{mdframed}
 \usepackage{algpseudocode}
 \usepackage{longtable,tabularx}
 \usepackage{amsmath,amsfonts,bm} % Math packages
 \setlength\LTleft{0pt} 
-
 
 
 % \usepackage{longtable,tabularx}
@@ -84,33 +81,6 @@ This project for ASEN5010 Spacecraft Dynamics and Control considers a small sate
 
 \begin{document}
 \maketitle
-
-
-
-
-\section*{Nomenclature}
-{\renewcommand\arraystretch{1.0}
-\noindent\begin{longtable*}{@{}l @{\quad=\quad} l@{}}
-$\mathbf{r}_I$    & Position vector, inertial frame\\
-$\mathbf{v}_I$    & Velocity vector, inertial frame\\
-$\mathbf{\omega}_B$   & Angular velocity vector, body frame\\
-$q_{B/I}$   & Unit attitude quaternion\\
-$\textbf{T}_B$  & Body Frame Thrust vector (N)\\
-$\mathbf{g}_I$      &Gravity vector of planet $(m/s^2)$ \\
-$m(t)$        &Mass of vehicle wrt time\\
-$\alpha$  & Constant describing mass consumption rate \\
-$T_{min}$   & Lower Thrust Bound\\
-$T_{max}$   & Upper Thrust Bound\\
-$m_{wet}$   & The total mass of the vehicle including propellant\\
-$t_f$     & Time of flight\\
-$\mathbf{x}$    & State Vector\\
-$\mathbf{u}$    & Input Vector\\
-$\tau$  & Normalized Trajectory Time \\
-$\sigma$  & Time dilation coefficient \\
-$\delta$    & Gimbal angle \\
-$\gamma_{gs}$   & Glideslope angle constraint\\
-\end{longtable*}}
-
 
 
 \clearpage
