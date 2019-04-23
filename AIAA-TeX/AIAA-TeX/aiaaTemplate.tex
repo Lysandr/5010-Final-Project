@@ -309,7 +309,7 @@ Now we must numerically integrate our differential equations of motion to simula
 For $\bm{u}$ control torque vector, the rigid body dynamics obey the following:
 
 \begin{equation}
-  [I]\bm{\dot{\omega}}_{BN} = -[\omega_{BN}^\times][I]\bm{\omega}_{BN} + \bm{u}
+  [I]\bm{\dot{\omega}}_{BN} = -[\boldsymbol{\omega}_{BN}^\times][I]\bm{\omega}_{BN} + \bm{u} - \bm{L}
 \end{equation}
 
 We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the nonlinear dynamics function $\dot{\bm{X}} = f(t,\bm{X})$, the integration algorithm is:
@@ -332,9 +332,34 @@ We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the non
 Each point $i \in [1:N]$ is 1 integration time step, and therefore the full simulation time $dtN$. Using this simulation framework, we can study our angular momentum $\bm{H} = [I]\bm{\omega}_{BN}$ and kinetic energy $T = \frac{1}{2} \bm{\omega}_{BN}^T [I] \bm{\omega}_{BN}$ over time.
 
 
-% for i = 1:npoints-1
 
 
+\section*{Task 8: Sun Pointing Control}
+Next, the control architecture must be developed. We shall use the linearized closed loop dynamics to determine the proportional and derivative gains.
+
+Let us consider the PD nonlinear feedback control law: 
+\begin{equation}
+  \boldsymbol{u}=-K \boldsymbol{\sigma}-[P] \delta \boldsymbol{\omega}+[I]\left(\dot{\boldsymbol{\omega}}_{r}-[{\boldsymbol{\omega}}^\times] \boldsymbol{\omega}_{r}\right)  +[{\boldsymbol{\omega}}^\times][I] \boldsymbol{\omega}-\boldsymbol{L}
+\end{equation}
+
+Let us disregard the external torque modeling error and consider the displacement MRP and deviation angular rate with the following state vector: 
+
+\begin{equation}
+\boldsymbol{x}=\left( \begin{array}{c}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{array}\right)
+\end{equation}
+
+Using the differential kinematic equation for the MRPs we arrive at the following nonlinear state space formulation, with the closed loop full-state feedback: 
+
+
+\begin{equation}
+\dot{\boldsymbol{x}}=\left( \begin{array}{c}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\omega}}\end{array}\right)=\left[ \begin{array}{cc}{0} & {\frac{1}{4} B(\boldsymbol{\sigma})} \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
+\end{equation}
+
+The small angle approximation is employed to linearize this formulation with the following:
+
+\begin{equation}
+\left( \begin{array}{c}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\omega}}\end{array}\right)=\left[ \begin{array}{cc}{0} & {\frac{1}{4} \mathbb{I}_3 } \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
+\end{equation}
 
 
 

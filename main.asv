@@ -9,7 +9,7 @@ Ic = diag([10 5 7.5]); p.Ic = Ic;
 % Problem specified orbital parameters
 mu_M =  42828.3;            % km3/s2
 h_LMO = 400;                % km 
-R_M = 3396.19;              % km 
+R_M = 3397.2;              % km 
 r_LMO = h_LMO + R_M;
 theta_dot_LMO = sqrt(mu_M / (r_LMO^3)); % rad/s, orbital angular rate(circ)
 r_GMO = 20424.2;
@@ -26,7 +26,7 @@ npoints = length(t);
 f_dot = @(t_in,state_in,param) dynamics(t_in,state_in,param);
 vehicle_state = zeros(6,npoints);
 vehicle_state(:,1) = [sigma_BN_0; omega_BN_B_0];
-p.L = [0.0 0 0].';
+p.L = [.3 1 1].';
 p.u = [0 0 0].';
 
 % Setup the tracking error stuff, and input history stuff
@@ -42,13 +42,13 @@ T = zeros(1,npoints);
 T(1) = 0.5*omega_BN_B_0.'*Ic*omega_BN_B_0; 
 
 % PD controller gain initialization
-P = diag(Ic).*(2/exp(1));
-K = max((P.^2)./diag(Ic));
+P = [1 1 1].';
+K = [1 1 1].';
 
 
 
 %% Start the simulation
-vehicle_mode = 3;
+vehicle_mode = 1;
 
 tic
 for i = 1:npoints-1
@@ -80,7 +80,7 @@ for i = 1:npoints-1
     
     % Calculate the control input from mode error
     sig_int = sig_int + dt.*(sigma_BR(:,i));
-    p.u = (-K.*sigma_BR(:,i)) + (-P.*omega_BR(:,i)); % + -0.01.*sig_int ;
+    p.u = (-K.*sigma_BR(:,i)) + (-P.*omega_BR(:,i)) + -0.01.*sig_int ;
     control_input(:,i) = p.u;
 
     
