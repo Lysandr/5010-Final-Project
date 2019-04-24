@@ -1,8 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.12)  23 APR 2019 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.3)  24 APR 2019 10:45
 entering extended mode
 **./aiaaTemplate.tex
 (aiaaTemplate.tex
-LaTeX2e <2018-04-01> patch level 5
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 (aiaaNew.cls
 Document Class: aiaaNew 1996/03/03 v1.0 AIAA document class
 
@@ -17,14 +18,14 @@ Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ize10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -91,7 +92,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -126,16 +127,14 @@ ek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
-\Hy@linkcounter=\count88
-\Hy@pagecounter=\count89
+\Hy@linkcounter=\count87
+\Hy@pagecounter=\count88
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count90
+\Hy@SavedSpaceFactor=\count89
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00mikt
 ex\hyperref.cfg"
@@ -149,7 +148,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count91
+\c@Hy@tempcnt=\count90
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\ur
 l.sty"
@@ -158,7 +157,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen106
-\Fld@menulength=\count92
+\Fld@menulength=\count91
 \Field@Width=\dimen107
 \Fld@charsize=\dimen108
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -170,17 +169,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count93
-\c@Item=\count94
-\c@Hfootnote=\count95
+\Hy@abspage=\count92
+\c@Item=\count93
+\c@Hfootnote=\count94
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\hpdftex.def"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count96
-\c@bookmark@seq@number=\count97
+\Fld@listcount=\count95
+\c@bookmark@seq@number=\count96
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
 ek\rerunfilecheck.sty"
@@ -218,8 +217,8 @@ Package caption2 Warning: ****************************************************
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\captio
 n\caption3.sty"
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen109
 \captionmargin@=\dimen110
 \captionwidth=\dimen111
@@ -229,7 +228,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@hangindent=\dimen115
 )
 Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
-e 218.
+e 221.
 \captionlinewidth=\dimen116
 \realcaptionwidth=\dimen117
 )
@@ -277,13 +276,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 h\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count98
+\inf@bad=\count97
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count99
-\leftroot@=\count100
+\uproot@=\count98
+\leftroot@=\count99
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count101
-\DOTSCASE@=\count102
+\classnum@=\count100
+\DOTSCASE@=\count101
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -292,15 +291,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count103
-\c@MaxMatrixCols=\count104
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
 \dotsspace@=\muskip11
-\c@parentequation=\count105
-\dspbrk@lvl=\count106
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
 \tag@help=\toks16
-\row@=\count107
-\column@=\count108
-\maxfields@=\count109
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
 \andhelp@=\toks17
 \eqnshift@=\dimen121
 \alignsep@=\dimen122
@@ -333,10 +332,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip58
 \subfigcapmargin=\dimen128
 \subfiglabelskip=\skip59
-\c@subfigure=\count110
-\c@lofdepth=\count111
-\c@subtable=\count112
-\c@lotdepth=\count113
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -358,7 +357,7 @@ tabls.sty"
 )
 \sfm@width=\skip62
 \sfm@colsep=\skip63
-\c@sfm@count=\count114
+\c@sfm@count=\count113
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\amssymb.sty"
@@ -393,22 +392,22 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 ages\xparse\xparse.sty"
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\expl3.sty"
-Package: expl3 2018-08-23 L3 programming layer (loader) 
+Package: expl3 2018-04-30 L3 programming layer (loader) 
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\expl3-code.tex"
-Package: expl3 2018-08-23 L3 programming layer (code)
-\c_max_int=\count115
-\l_tmpa_int=\count116
-\l_tmpb_int=\count117
-\g_tmpa_int=\count118
-\g_tmpb_int=\count119
-\g__kernel_prg_map_int=\count120
-\c_log_iow=\count121
-\l_iow_line_count_int=\count122
-\l__iow_line_target_int=\count123
-\l__iow_one_indent_int=\count124
-\l__iow_indent_int=\count125
+Package: expl3 2018-04-30 L3 programming layer (code)
+\c_max_int=\count114
+\l_tmpa_int=\count115
+\l_tmpb_int=\count116
+\g_tmpa_int=\count117
+\g_tmpb_int=\count118
+\g__kernel_prg_map_int=\count119
+\c_log_iow=\count120
+\l_iow_line_count_int=\count121
+\l__iow_line_target_int=\count122
+\l__iow_one_indent_int=\count123
+\l__iow_indent_int=\count124
 \c_zero_dim=\dimen135
 \c_max_dim=\dimen136
 \l_tmpa_dim=\dimen137
@@ -427,78 +426,77 @@ Package: expl3 2018-08-23 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count126
-\l__intarray_loop_int=\count127
+\l_keys_choice_int=\count125
+\c__fp_leading_shift_int=\count126
+\c__fp_middle_shift_int=\count127
+\c__fp_trailing_shift_int=\count128
+\c__fp_big_leading_shift_int=\count129
+\c__fp_big_middle_shift_int=\count130
+\c__fp_big_trailing_shift_int=\count131
+\c__fp_Bigg_leading_shift_int=\count132
+\c__fp_Bigg_middle_shift_int=\count133
+\c__fp_Bigg_trailing_shift_int=\count134
+\c__fp_rand_size_int=\count135
+\c__fp_rand_four_int=\count136
+\c__fp_rand_eight_int=\count137
 \c__intarray_sp_dim=\dimen141
-\g__intarray_font_int=\count128
-\c__fp_leading_shift_int=\count129
-\c__fp_middle_shift_int=\count130
-\c__fp_trailing_shift_int=\count131
-\c__fp_big_leading_shift_int=\count132
-\c__fp_big_middle_shift_int=\count133
-\c__fp_big_trailing_shift_int=\count134
-\c__fp_Bigg_leading_shift_int=\count135
-\c__fp_Bigg_middle_shift_int=\count136
-\c__fp_Bigg_trailing_shift_int=\count137
-\c__kernel_randint_max_int=\count138
-\g__fp_array_int=\count139
-\l__fp_array_loop_int=\count140
-\l__sort_length_int=\count141
-\l__sort_min_int=\count142
-\l__sort_top_int=\count143
-\l__sort_max_int=\count144
-\l__sort_true_max_int=\count145
-\l__sort_block_int=\count146
-\l__sort_begin_int=\count147
-\l__sort_end_int=\count148
-\l__sort_A_int=\count149
-\l__sort_B_int=\count150
-\l__sort_C_int=\count151
-\l__tl_analysis_normal_int=\count152
-\l__tl_analysis_index_int=\count153
-\l__tl_analysis_nesting_int=\count154
-\l__tl_analysis_type_int=\count155
-\l__regex_internal_a_int=\count156
-\l__regex_internal_b_int=\count157
-\l__regex_internal_c_int=\count158
-\l__regex_balance_int=\count159
-\l__regex_group_level_int=\count160
-\l__regex_mode_int=\count161
-\c__regex_cs_in_class_mode_int=\count162
-\c__regex_cs_mode_int=\count163
-\l__regex_catcodes_int=\count164
-\l__regex_default_catcodes_int=\count165
-\c__regex_catcode_D_int=\count166
-\c__regex_catcode_S_int=\count167
-\c__regex_catcode_L_int=\count168
-\c__regex_catcode_O_int=\count169
-\c__regex_catcode_A_int=\count170
-\c__regex_all_catcodes_int=\count171
-\l__regex_show_lines_int=\count172
-\l__regex_min_state_int=\count173
-\l__regex_max_state_int=\count174
-\l__regex_left_state_int=\count175
-\l__regex_right_state_int=\count176
-\l__regex_capturing_group_int=\count177
-\l__regex_min_pos_int=\count178
-\l__regex_max_pos_int=\count179
-\l__regex_curr_pos_int=\count180
-\l__regex_start_pos_int=\count181
-\l__regex_success_pos_int=\count182
-\l__regex_curr_char_int=\count183
-\l__regex_curr_catcode_int=\count184
-\l__regex_last_char_int=\count185
-\l__regex_case_changed_char_int=\count186
-\l__regex_curr_state_int=\count187
-\l__regex_step_int=\count188
-\l__regex_min_active_int=\count189
-\l__regex_max_active_int=\count190
-\l__regex_replacement_csnames_int=\count191
-\l__regex_match_count_int=\count192
-\l__regex_min_submatch_int=\count193
-\l__regex_submatch_int=\count194
-\l__regex_zeroth_submatch_int=\count195
-\g__regex_trace_regex_int=\count196
+\g__intarray_font_int=\count138
+\l__sort_length_int=\count139
+\l__sort_min_int=\count140
+\l__sort_top_int=\count141
+\l__sort_max_int=\count142
+\l__sort_true_max_int=\count143
+\l__sort_block_int=\count144
+\l__sort_begin_int=\count145
+\l__sort_end_int=\count146
+\l__sort_A_int=\count147
+\l__sort_B_int=\count148
+\l__sort_C_int=\count149
+\l__tl_analysis_normal_int=\count150
+\l__tl_analysis_index_int=\count151
+\l__tl_analysis_nesting_int=\count152
+\l__tl_analysis_type_int=\count153
+\l__regex_internal_a_int=\count154
+\l__regex_internal_b_int=\count155
+\l__regex_internal_c_int=\count156
+\l__regex_balance_int=\count157
+\l__regex_group_level_int=\count158
+\l__regex_mode_int=\count159
+\c__regex_cs_in_class_mode_int=\count160
+\c__regex_cs_mode_int=\count161
+\l__regex_catcodes_int=\count162
+\l__regex_default_catcodes_int=\count163
+\c__regex_catcode_D_int=\count164
+\c__regex_catcode_S_int=\count165
+\c__regex_catcode_L_int=\count166
+\c__regex_catcode_O_int=\count167
+\c__regex_catcode_A_int=\count168
+\c__regex_all_catcodes_int=\count169
+\l__regex_show_lines_int=\count170
+\l__regex_min_state_int=\count171
+\l__regex_max_state_int=\count172
+\l__regex_left_state_int=\count173
+\l__regex_right_state_int=\count174
+\l__regex_capturing_group_int=\count175
+\l__regex_min_pos_int=\count176
+\l__regex_max_pos_int=\count177
+\l__regex_curr_pos_int=\count178
+\l__regex_start_pos_int=\count179
+\l__regex_success_pos_int=\count180
+\l__regex_curr_char_int=\count181
+\l__regex_curr_catcode_int=\count182
+\l__regex_last_char_int=\count183
+\l__regex_case_changed_char_int=\count184
+\l__regex_curr_state_int=\count185
+\l__regex_step_int=\count186
+\l__regex_min_active_int=\count187
+\l__regex_max_active_int=\count188
+\l__regex_replacement_csnames_int=\count189
+\l__regex_match_count_int=\count190
+\l__regex_min_submatch_int=\count191
+\l__regex_submatch_int=\count192
+\l__regex_zeroth_submatch_int=\count193
+\g__regex_trace_regex_int=\count194
 \c_empty_box=\box28
 \l_tmpa_box=\box29
 \l_tmpb_box=\box30
@@ -540,25 +538,25 @@ Package: expl3 2018-08-23 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen164
 \l__coffin_scaled_total_height_dim=\dimen165
 \l__coffin_scaled_width_dim=\dimen166
-\l__seq_internal_a_int=\count197
-\l__seq_internal_b_int=\count198
+\l__seq_internal_a_int=\count195
+\l__seq_internal_b_int=\count196
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kern
 el\l3pdfmode.def"
-File: l3pdfmode.def 2018-08-23 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count199
+File: l3pdfmode.def 2018-04-30 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count197
 ))
-Package: xparse 2018-08-23 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count266
-\g__xparse_grabber_int=\count267
-\l__xparse_m_args_int=\count268
-\l__xparse_mandatory_args_int=\count269
-\l__xparse_v_nesting_int=\count270
+Package: xparse 2018-04-30 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count198
+\g__xparse_grabber_int=\count199
+\l__xparse_m_args_int=\count266
+\l__xparse_mandatory_args_int=\count267
+\l__xparse_v_nesting_int=\count268
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolb
 ox\etoolbox.sty"
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count271
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
 ek\zref-abspage.sty"
@@ -571,7 +569,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count272
+\c@abspage=\count270
 Package zref Info: New property: abspage on input line 62.
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\needsp
@@ -589,7 +587,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 \mdf@templength=\skip73
-\c@mdf@globalstyle@cnt=\count273
+\c@mdf@globalstyle@cnt=\count271
 \mdf@skipabove@length=\skip74
 \mdf@skipbelow@length=\skip75
 \mdf@leftmargin@length=\skip76
@@ -666,7 +664,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip137
 \mdfsubtitleheight=\skip138
 \mdfsubsubtitleheight=\skip139
-\c@mdfcountframes=\count274
+\c@mdfcountframes=\count272
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -682,10 +680,10 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count275
-\c@mdf@env@i=\count276
-\c@mdf@env@ii=\count277
-\c@mdf@zref@counter=\count278
+\mdf@envdepth=\count273
+\c@mdf@env@i=\count274
+\c@mdf@env@ii=\count275
+\c@mdf@zref@counter=\count276
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algori
@@ -696,7 +694,7 @@ nment
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\
 float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count279
+\c@float@type=\count277
 \float@exts=\toks26
 \float@box=\box48
 \@float@everytoks=\toks27
@@ -707,7 +705,7 @@ fthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks28
-\c@algorithm=\count280
+\c@algorithm=\count278
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algori
 thmicx\algpseudocode.sty"
@@ -718,15 +716,15 @@ thmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count281
-\c@ALG@rem=\count282
-\c@ALG@nested=\count283
+\c@ALG@line=\count279
+\c@ALG@rem=\count280
+\c@ALG@nested=\count281
 \ALG@tlm=\skip140
 \ALG@thistlm=\skip141
-\c@ALG@Lnr=\count284
-\c@ALG@blocknr=\count285
-\c@ALG@storecount=\count286
-\c@ALG@tmpcounter=\count287
+\c@ALG@Lnr=\count282
+\c@ALG@blocknr=\count283
+\c@ALG@storecount=\count284
+\c@ALG@tmpcounter=\count285
 \ALG@tmplength=\skip142
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -738,27 +736,26 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip144
 \LTpre=\skip145
 \LTpost=\skip146
-\LTchunksize=\count288
+\LTchunksize=\count286
 \LTcapwidth=\dimen167
 \LT@head=\box50
 \LT@firsthead=\box51
 \LT@foot=\box52
 \LT@lastfoot=\box53
-\LT@cols=\count289
-\LT@rows=\count290
-\c@LT@tables=\count291
-\c@LT@chunks=\count292
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
 \LT@p@ftn=\toks29
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\
 tabularx.sty"
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\
 array.sty"
-Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen168
-\ar@mcellbox=\box54
 \extrarowheight=\dimen169
 \NC@list=\toks30
 \extratabsurround=\skip147
@@ -768,14 +765,13 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 LaTeX Warning: Command \@xhline  has changed.
                Check if current package is valid.
 
-\ar@cellbox=\box55
 )
 \TX@col@width=\dimen170
 \TX@old@table=\dimen171
 \TX@old@col=\dimen172
 \TX@target=\dimen173
 \TX@delta=\dimen174
-\TX@cols=\count293
+\TX@cols=\count291
 \TX@ftn=\toks31
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\fr
@@ -794,7 +790,7 @@ utilities\pgfutil-common.tex"
 utilities\pgfutil-common-lists.tex"))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 utilities\pgfutil-latex.def"
-\pgfutil@abb=\box56
+\pgfutil@abb=\box54
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\eve
 ryshi.sty"
@@ -833,10 +829,10 @@ utilities\pgfkeysfiltered.code.tex"
 \pgf@yc=\dimen184
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count294
-\c@pgf@countb=\count295
-\c@pgf@countc=\count296
-\c@pgf@countd=\count297
+\c@pgf@counta=\count292
+\c@pgf@countb=\count293
+\c@pgf@countc=\count294
+\c@pgf@countd=\count295
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
@@ -858,8 +854,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 systemlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count298
-\pgfsyssoftpath@bigbuffer@items=\count299
+\pgfsyssoftpath@smallbuffer@items=\count296
+\pgfsyssoftpath@bigbuffer@items=\count297
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 systemlayer\pgfsysprotocol.code.tex"
@@ -898,8 +894,8 @@ math\pgfmathutil.code.tex")
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen185
-\pgfmath@count=\count300
-\pgfmath@box=\box57
+\pgfmath@count=\count298
+\pgfmath@box=\box55
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
@@ -924,7 +920,7 @@ math\pgfmathfunctions.misc.code.tex")
 math\pgfmathfunctions.integerarithmetics.code.tex")))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count301
+\c@pgfmathroundto@lastzeros=\count299
 ))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcorepoints.code.tex"
@@ -959,10 +955,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box58
-\pgf@hbox=\box59
-\pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count302
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count300
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcoregraphicstate.code.tex"
@@ -997,7 +993,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count303
+\pgf@sys@shading@range@num=\count301
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcoreimage.code.tex"
@@ -1006,7 +1002,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box61
+\pgfexternal@startupbox=\box59
 ))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 basiclayer\pgfcorelayers.code.tex"
@@ -1023,7 +1019,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box62
+\pgfnodeparttextbox=\box60
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 modules\pgfmoduleplot.code.tex"
@@ -1067,7 +1063,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 libraries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count304
+\pgf@plot@mark@count=\count302
 \pgfplotmarksize=\dimen270
 )
 \tikz@lastx=\dimen271
@@ -1076,23 +1072,23 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen274
 \tikzleveldistance=\dimen275
 \tikzsiblingdistance=\dimen276
-\tikz@figbox=\box63
-\tikz@figbox@bg=\box64
-\tikz@tempbox=\box65
-\tikz@tempbox@bg=\box66
-\tikztreelevel=\count305
-\tikznumberofchildren=\count306
-\tikznumberofcurrentchild=\count307
-\tikz@fig@count=\count308
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count303
+\tikznumberofchildren=\count304
+\tikznumberofcurrentchild=\count305
+\tikz@fig@count=\count306
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count309
-\pgfmatrixcurrentcolumn=\count310
-\pgf@matrix@numberofcolumns=\count311
+\pgfmatrixcurrentrow=\count307
+\pgfmatrixcurrentcolumn=\count308
+\pgf@matrix@numberofcolumns=\count309
 )
-\tikz@expandcount=\count312
+\tikz@expandcount=\count310
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
 frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex"
@@ -1120,33 +1116,352 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 libraries\shapes\pgflibraryshapes.multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box67
-\pgfnodeparttwobox=\box68
-\pgfnodepartthreebox=\box69
-\pgfnodepartfourbox=\box70
-\pgfnodeparttwentybox=\box71
-\pgfnodepartnineteenbox=\box72
-\pgfnodeparteighteenbox=\box73
-\pgfnodepartseventeenbox=\box74
-\pgfnodepartsixteenbox=\box75
-\pgfnodepartfifteenbox=\box76
-\pgfnodepartfourteenbox=\box77
-\pgfnodepartthirteenbox=\box78
-\pgfnodeparttwelvebox=\box79
-\pgfnodepartelevenbox=\box80
-\pgfnodeparttenbox=\box81
-\pgfnodepartninebox=\box82
-\pgfnodeparteightbox=\box83
-\pgfnodepartsevenbox=\box84
-\pgfnodepartsixbox=\box85
-\pgfnodepartfivebox=\box86
+\pgfnodepartlowerbox=\box65
+\pgfnodeparttwobox=\box66
+\pgfnodepartthreebox=\box67
+\pgfnodepartfourbox=\box68
+\pgfnodeparttwentybox=\box69
+\pgfnodepartnineteenbox=\box70
+\pgfnodeparteighteenbox=\box71
+\pgfnodepartseventeenbox=\box72
+\pgfnodepartsixteenbox=\box73
+\pgfnodepartfifteenbox=\box74
+\pgfnodepartfourteenbox=\box75
+\pgfnodepartthirteenbox=\box76
+\pgfnodeparttwelvebox=\box77
+\pgfnodepartelevenbox=\box78
+\pgfnodeparttenbox=\box79
+\pgfnodepartninebox=\box80
+\pgfnodeparteightbox=\box81
+\pgfnodepartsevenbox=\box82
+\pgfnodepartsixbox=\box83
+\pgfnodepartfivebox=\box84
 )))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\i
 nputenc.sty"
-Package: inputenc 2018/04/06 v1.3b Input encoding file
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
-) (mcode.sty
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\u
+tf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
+1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\o
+t1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\o
+msenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (mcode.sty
 -- Package: `mcode' 2.5 <2014/03/06> --
 Package: mcode 2014/03/06 2.5
  - settings optimized for display (colour formating)
@@ -1157,31 +1472,31 @@ Package: mcode 2014/03/06 2.5
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
 gs\listings.sty"
-\lst@mode=\count313
-\lst@gtempboxa=\box87
+\lst@mode=\count311
+\lst@gtempboxa=\box85
 \lst@token=\toks46
-\lst@length=\count314
+\lst@length=\count312
 \lst@currlwidth=\dimen278
-\lst@column=\count315
-\lst@pos=\count316
+\lst@column=\count313
+\lst@pos=\count314
 \lst@lostspace=\dimen279
 \lst@width=\dimen280
-\lst@newlines=\count317
-\lst@lineno=\count318
+\lst@newlines=\count315
+\lst@lineno=\count316
 \lst@maxwidth=\dimen281
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
 gs\lstmisc.sty"
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count319
-\lst@skipnumbers=\count320
-\lst@framebox=\box88
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
+\lst@framebox=\box86
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
 gs\listings.cfg"
-File: listings.cfg 2018/09/02 1.7 listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
 extcomp.sty"
@@ -1207,7 +1522,7 @@ Now handling font encoding TS1 ...
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
 s1enc.dfu"
-File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -1277,7 +1592,6 @@ File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
@@ -1343,39 +1657,108 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\lbreakdots=\box89
+\lbreakdots=\box87
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 228.
 
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
 \ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)) (aiaaTemplate.aux)
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\captio
+n\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\captio
+n\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+
+! Package caption Error: You can't use both, the (obsolete) caption2 *and*
+(caption)                the (current) caption package.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+\GenericError  ...                                
+                                                  \endgroup 
+<argument> ...Break the (current) caption package}
+                                                  \endinput 
+\@firstoftwo #1#2->#1
+                     
+l.56 }{}
+        
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+
+! Package subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfigure package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+\GenericError  ...                                
+                                                  \endgroup 
+<argument> ... subfigure package}{\subcaption@EH }
+                                                  \endinput 
+\@firstoftwo #1#2->#1
+                     
+\subcaption@CheckCompatibility ...H }\endinput }{}
+                                                  \@ifpackageloaded {subfig}...
+l.63 \subcaption@CheckCompatibility
+                                   
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (aiaaTemplate.aux
+
+LaTeX Warning: Label `fig:T11_state' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:T11_state' multiply defined.
+
+
+LaTeX Warning: Label `fig:T11_error' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:T11_error' multiply defined.
+
+)
 \openout1 = `aiaaTemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
 s1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 65.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
 \ot1ptm.fd"
@@ -1383,21 +1766,21 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 65.
+(lastpage)             ! on input line 69.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\context\base
 \supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count319
 \scratchdimen=\dimen282
-\scratchbox=\box90
-\nofMPsegments=\count322
-\nofMParguments=\count323
+\scratchbox=\box88
+\nofMPsegments=\count320
+\nofMParguments=\count321
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count324
+\MPscratchCnt=\count322
 \MPscratchDim=\dimen283
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
 \everyMPtoPDFconversion=\toks48
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
@@ -1415,8 +1798,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring ON on input line 65.
+\AtBeginShipoutBox=\box89
+Package hyperref Info: Link coloring ON on input line 69.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\nameref.sty"
@@ -1426,11 +1809,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 diek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count327
+\c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
  (aiaaTemplate.out) (aiaaTemplate.out)
 \@outlinefile=\write4
 \openout4 = `aiaaTemplate.out'.
@@ -1439,136 +1822,112 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count328
+\c@lstlisting=\count326
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 70.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
 \ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
  [1
 
 {C:/Users/Padraig Lysandrou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 <Figures/framedef.PNG, id=22, 272.51813pt x 194.22563pt>
 File: Figures/framedef.PNG Graphic file (type png)
 <use Figures/framedef.PNG>
-Package pdftex.def Info: Figures/framedef.PNG  used on input line 78.
-(pdftex.def)             Requested size: 234.87749pt x 167.39827pt.
+Package pdftex.def Info: Figures/framedef.PNG  used on input line 90.
+(pdftex.def)             Requested size: 233.31259pt x 166.28394pt.
+<Figures/orbitscenario.PNG, id=24, 493.845pt x 322.95656pt>
+File: Figures/orbitscenario.PNG Graphic file (type png)
+<use Figures/orbitscenario.PNG>
+Package pdftex.def Info: Figures/orbitscenario.PNG  used on input line 91.
+(pdftex.def)             Requested size: 233.31259pt x 152.57314pt.
  [2
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-<to be read again> \@EveryShipout@Output 
-                                         \endgroup \set@typeset@protect 
-\@outputpage ...width {\@thefoot }\color@endbox }}
-                                                  \global \let \if@newlist \...
-
-\@opcol ...lumn \@outputdblcol \else \@outputpage 
-                                                  \fi \global \@mparbottom \...
-<output> ...specialoutput \else \@makecol \@opcol 
-                                                  \@startcolumn \@whilesw \i...
-<to be read again> 
-                   \global 
-\ignorespacesafterend ->\global 
-                                \let \if@ignore \iftrue 
-\end ...use {@end@#1@hook}\csname end#1\endcsname 
-                                                  \@checkend {#1}\expandafte...
-l.125 \end{align}
-                  <./Figures/framedef.PNG>] [3]
-Overfull \hbox (36.17905pt too wide) detected at line 284
+ <./Figures/framedef.PNG> <./Figures/orbitscenario.PNG>]
+[3]
+Overfull \hbox (36.17905pt too wide) detected at line 295
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 BN\OT1/cmr/m/n/10 ] = [] []
  []
 
 [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 338.
+put line 349.
  [5]
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
-                                                  \@tempdima =\wd \@tempboxa...
-l.429 \begin{subfigure}{.5\textwidth}
-                                     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
-                                                  \@tempdima =\wd \@tempboxa...
-l.429 \begin{subfigure}{.5\textwidth}
-                                     
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<Figures/T8_error.png, id=101, 421.575pt x 316.18124pt>
-File: Figures/T8_error.png Graphic file (type png)
-<use Figures/T8_error.png>
-Package pdftex.def Info: Figures/T8_error.png  used on input line 431.
-(pdftex.def)             Requested size: 187.89912pt x 140.92455pt.
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
-                                                  \@tempdima =\wd \@tempboxa...
-l.435 \begin{subfigure}{.5\textwidth}
-                                     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
-                                                  \@tempdima =\wd \@tempboxa...
-l.435 \begin{subfigure}{.5\textwidth}
-                                     
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<Figures/T8_state.png, id=102, 421.575pt x 316.18124pt>
+<Figures/T8_state.png, id=106, 421.575pt x 316.18124pt>
 File: Figures/T8_state.png Graphic file (type png)
 <use Figures/T8_state.png>
-Package pdftex.def Info: Figures/T8_state.png  used on input line 437.
-(pdftex.def)             Requested size: 187.89912pt x 140.92455pt.
-[6] (aiaaTemplate.bbl
+Package pdftex.def Info: Figures/T8_state.png  used on input line 429.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T8_error.png, id=107, 421.575pt x 316.18124pt>
+File: Figures/T8_error.png Graphic file (type png)
+<use Figures/T8_error.png>
+Package pdftex.def Info: Figures/T8_error.png  used on input line 430.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T9_state.png, id=108, 421.575pt x 316.18124pt>
+File: Figures/T9_state.png Graphic file (type png)
+<use Figures/T9_state.png>
+Package pdftex.def Info: Figures/T9_state.png  used on input line 443.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T9_error.png, id=109, 421.575pt x 316.18124pt>
+File: Figures/T9_error.png Graphic file (type png)
+<use Figures/T9_error.png>
+Package pdftex.def Info: Figures/T9_error.png  used on input line 444.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T10_state.png, id=112, 421.575pt x 316.18124pt>
+File: Figures/T10_state.png Graphic file (type png)
+<use Figures/T10_state.png>
+Package pdftex.def Info: Figures/T10_state.png  used on input line 457.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T10_error.png, id=113, 421.575pt x 316.18124pt>
+File: Figures/T10_error.png Graphic file (type png)
+<use Figures/T10_error.png>
+Package pdftex.def Info: Figures/T10_error.png  used on input line 458.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+ [6]
+<Figures/T11_state.png, id=131, 421.575pt x 316.18124pt>
+File: Figures/T11_state.png Graphic file (type png)
+<use Figures/T11_state.png>
+Package pdftex.def Info: Figures/T11_state.png  used on input line 491.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T11_error.png, id=132, 421.575pt x 316.18124pt>
+File: Figures/T11_error.png Graphic file (type png)
+<use Figures/T11_error.png>
+Package pdftex.def Info: Figures/T11_error.png  used on input line 492.
+(pdftex.def)             Requested size: 233.31259pt x 174.98573pt.
+<Figures/T11_modehistory.png, id=133, 421.575pt x 316.18124pt>
+File: Figures/T11_modehistory.png Graphic file (type png)
+<use Figures/T11_modehistory.png>
+Package pdftex.def Info: Figures/T11_modehistory.png  used on input line 498.
+(pdftex.def)             Requested size: 352.31624pt x 264.23956pt.
+<Figures/T11_control.png, id=134, 421.575pt x 316.18124pt>
+File: Figures/T11_control.png Graphic file (type png)
+<use Figures/T11_control.png>
+Package pdftex.def Info: Figures/T11_control.png  used on input line 505.
+(pdftex.def)             Requested size: 352.31624pt x 264.23956pt.
+ (aiaaTemplate.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
-) [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1585,9 +1944,9 @@ LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
 \newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
                                                   
-l.486 \newpage
+l.529 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.3}) has been already used, duplicate ignored
+{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1603,46 +1962,158 @@ l.486 \newpage
 
 \newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
                                                   
-l.486 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-<to be read again> \@EveryShipout@Output 
-                                         \endgroup \set@typeset@protect 
-\@outputpage ...width {\@thefoot }\color@endbox }}
-                                                  \global \let \if@newlist \...
-
-\@opcol ...lumn \@outputdblcol \else \@outputpage 
-                                                  \fi \global \@mparbottom \...
-<output> ...specialoutput \else \@makecol \@opcol 
-                                                  \@startcolumn \@whilesw \i...
-
-\newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
-                                                  
-l.486 \newpage
-               <./Figures/T8_error.png (PNG copy)> <./Figures/T8_state.png (PNG
- copy)>]
+l.529 \newpage
+               <./Figures/T8_state.png (PNG copy)> <./Figures/T8_error.png (PNG
+ copy)> <./Figures/T9_state.png (PNG copy)> <./Figures/T9_error.png (PNG copy)>
+]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 487.
- (main.m
+nput line 530.
+ (../../main.m
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 5.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
 \ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [8]
+) [8pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+
+\lst@OrgOutput ...loutput \else \@makecol \@opcol 
+                                                  \@startcolumn \@whilesw \i...
+<output> ...igExtendedCatcodes \fi \lst@OrgOutput 
+                                                  }
+<everypar> 
+           \lsthk@EveryLine \lsthk@EveryPar 
+\lst@NewLine ...Box \@gobble \else \par \noindent 
+                                                  \hbox {}\fi \global \advan...
+
+\@whilenum #1\do #2->\ifnum #1\relax #2
+                                       \relax \@iwhilenum {#1\relax #2\relax...
+
+\lst@DoNewLines ...sthk@OnEmptyLine \lst@NewLine }
+                                                  \ifnum \lst@newlines >\z@ ...
+
+\lst@TrackNewLines ...k@OnNewLine \lst@DoNewLines 
+                                                  \fi 
+...
+l.20 % 
+       theta_dot_GMO = 0.0000709003;pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+
+\lst@OrgOutput ...loutput \else \@makecol \@opcol 
+                                                  \@startcolumn \@whilesw \i...
+<output> ...igExtendedCatcodes \fi \lst@OrgOutput 
+                                                  }
+<everypar> 
+           \lsthk@EveryLine \lsthk@EveryPar 
+\lst@NewLine ...Box \@gobble \else \par \noindent 
+                                                  \hbox {}\fi \global \advan...
+
+\@whilenum #1\do #2->\ifnum #1\relax #2
+                                       \relax \@iwhilenum {#1\relax #2\relax...
+
+\lst@DoNewLines ...sthk@OnEmptyLine \lst@NewLine }
+                                                  \ifnum \lst@newlines >\z@ ...
+
+\lst@TrackNewLines ...k@OnNewLine \lst@DoNewLines 
+                                                  \fi 
+...
+l.20 % 
+       theta_dot_GMO = 0.0000709003; <./Figures/T10_state.png (PNG copy)> <./Fi
+gures/T10_error.png (PNG copy)> <./Figures/T11_state.png (PNG copy)> <./Figures
+/T11_error.png (PNG copy)>] [9pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+<argument> \@opcol 
+                   \@startcolumn 
+\@whilesw #1\fi #2->#1#2
+                        \@iwhilesw {#1#2}\fi \fi 
+\lst@OrgOutput ...ade \fi {\@opcol \@startcolumn }
+                                                  \fi \ifnum \outputpenalty ...
+<output> ...igExtendedCatcodes \fi \lst@OrgOutput 
+                                                  }
+<everypar> 
+           \lsthk@EveryLine \lsthk@EveryPar 
+\lst@NewLine ...Box \@gobble \else \par \noindent 
+                                                  \hbox {}\fi \global \advan...
+
+\@whilenum #1\do #2->\ifnum #1\relax #2
+                                       \relax \@iwhilenum {#1\relax #2\relax...
+...
+l.20 % 
+       theta_dot_GMO = 0.0000709003;pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+<argument> \@opcol 
+                   \@startcolumn 
+\@whilesw #1\fi #2->#1#2
+                        \@iwhilesw {#1#2}\fi \fi 
+\lst@OrgOutput ...ade \fi {\@opcol \@startcolumn }
+                                                  \fi \ifnum \outputpenalty ...
+<output> ...igExtendedCatcodes \fi \lst@OrgOutput 
+                                                  }
+<everypar> 
+           \lsthk@EveryLine \lsthk@EveryPar 
+\lst@NewLine ...Box \@gobble \else \par \noindent 
+                                                  \hbox {}\fi \global \advan...
+
+\@whilenum #1\do #2->\ifnum #1\relax #2
+                                       \relax \@iwhilenum {#1\relax #2\relax...
+...
+l.20 % 
+       theta_dot_GMO = 0.0000709003; <./Figures/T11_modehistory.png (PNG copy)>
+ <./Figures/T11_control.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9])
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11])
+[12] (../../dynamics.m) (../../track_error.m) (../../oe2rv_schaub.m)
 
 AED: lastpage setting LastPage
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 539.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 539.
  (aiaaTemplate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 539.
 
 
  *File List*
@@ -1669,7 +2140,7 @@ ifluatex.sty    2016/05/16 v1.4 Provides the ifluatex switch (HO)
 etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 kvsetkeys.sty    2016/05/16 v1.17 Key value parser (HO)
 kvdefinekeys.sty    2016/05/16 v1.4 Define keys (HO)
-pdftexcmds.sty    2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+pdftexcmds.sty    2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
 pdfescape.sty    2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
   bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
@@ -1692,7 +2163,7 @@ rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 overcite.sty    2003/05/27  v 4.0
     cite.sty    2015/02/27  v 5.5
 caption2.sty    2015/09/15 v2.2-100 Customising captions (AR)
-caption3.sty    2018/05/27 v1.8a caption3 kernel (AR)
+caption3.sty    2016/05/22 v1.7-166 caption3 kernel (AR)
 fancyhdr.sty    2017/06/30 v3.9a Extensive control of page headers and footers
    times.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
  amsmath.sty    2017/09/02 v2.17a AMS math features
@@ -1708,11 +2179,11 @@ subfigure.cfg
 amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
   amsthm.sty    2017/10/31 v2.20.4
 mdframed.sty    2013/07/01 1.9b: mdframed
-  xparse.sty    2018-08-23 L3 Experimental document command parser
-   expl3.sty    2018-08-23 L3 programming layer (loader) 
-expl3-code.tex    2018-08-23 L3 programming layer 
-l3pdfmode.def    2018-08-23 v L3 Experimental driver: PDF mode
-etoolbox.sty    2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+  xparse.sty    2018-04-30 L3 Experimental document command parser
+   expl3.sty    2018-04-30 L3 programming layer (loader) 
+expl3-code.tex    2018-04-30 L3 programming layer 
+l3pdfmode.def    2018-04-30 v L3 Experimental driver: PDF mode
+etoolbox.sty    2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 zref-abspage.sty    2016/05/21 v2.26 Module abspage for zref (HO)
 zref-base.sty    2016/05/21 v2.26 Module base for zref (HO)
 needspace.sty    2010/09/12 v1.3d reserve vertical space
@@ -1726,8 +2197,8 @@ ent
 algpseudocode.sty    
 algorithmicx.sty    2005/04/27 v1.2 Algorithmicx
 longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
-tabularx.sty    2016/02/03 v2.11b `tabularx' package (DPC)
-   array.sty    2018/04/30 v2.4h Tabular extension package (FMi)
+tabularx.sty    2016/02/03 v2.11 `tabularx' package (DPC)
+   array.sty    2016/10/06 v2.4d Tabular extension package (FMi)
     tikz.sty    2015/08/07 v3.0.1a (rcs-revision 1.151)
      pgf.sty    2015/08/07 v3.0.1a (rcs-revision 1.15)
   pgfrcs.sty    2015/08/07 v3.0.1a (rcs-revision 1.31)
@@ -1750,15 +2221,21 @@ pgfcomp-version-1-18.sty    2007/07/23 v3.0.1a (rcs-revision 1.1)
  pgfmath.code.tex
   pgffor.code.tex
     tikz.code.tex
-inputenc.sty    2018/04/06 v1.3b Input encoding file
+inputenc.sty    2015/03/17 v1.2c Input encoding file
+    utf8.def    2017/01/28 v1.1t UTF-8 support for inputenc
+   t1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  ot1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
+  omsenc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
    mcode.sty    2014/03/06 2.5
-listings.sty    2018/09/02 1.7 (Carsten Heinz)
- lstmisc.sty    2018/09/02 1.7 (Carsten Heinz)
-listings.cfg    2018/09/02 1.7 listings configuration
+listings.sty    2015/06/04 1.6 (Carsten Heinz)
+ lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
+listings.cfg    2015/06/04 1.6 listings configuration
 textcomp.sty    2017/04/05 v2.0i Standard LaTeX package
   ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-  ts1enc.dfu    2018/04/05 v1.2c UTF-8 support for inputenc
+  ts1enc.dfu    2017/01/28 v1.1t UTF-8 support for inputenc
   ot1pcr.fd    2001/06/04 font definitions for OT1/pcr.
+subcaption.sty    2016/05/22 v1.1-161 Sub-captions (AR)
+ caption.sty    2016/02/21 v3.3-144 Customizing captions (AR)
   ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
   ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
 supp-pdf.mkii
@@ -1772,26 +2249,41 @@ aiaaTemplate.out
     umsb.fd    2013/01/14 v3.01 AMS symbols B
   ts1ptm.fd    2001/06/04 font definitions for TS1/ptm.
 Figures/framedef.PNG
-Figures/T8_error.png
+Figures/orbitscenario.PNG
 Figures/T8_state.png
+Figures/T8_error.png
+Figures/T9_state.png
+Figures/T9_error.png
+Figures/T10_state.png
+Figures/T10_error.png
+Figures/T11_state.png
+Figures/T11_error.png
+Figures/T11_modehistory.png
+Figures/T11_control.png
 aiaaTemplate.bbl
-    main.m
+../../main.m
   ts1pcr.fd    2001/06/04 font definitions for TS1/pcr.
+../../dynamics.m
+../../track_error.m
+../../oe2rv_schaub.m
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 539.
 Package rerunfilecheck Info: File `aiaaTemplate.out' has not changed.
 (rerunfilecheck)             Checksum: C906B509F4D16882234BB83FEFDC0C57;46.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 539.
  ) 
 Here is how much of TeX's memory you used:
- 31852 strings out of 492973
- 608928 string characters out of 3121374
- 779875 words of memory out of 3000000
- 35012 multiletter control sequences out of 15000+200000
- 563849 words of font info for 98 fonts, out of 3000000 for 9000
+ 31543 strings out of 493305
+ 609359 string characters out of 3124581
+ 766424 words of memory out of 3000000
+ 34260 multiletter control sequences out of 15000+200000
+ 561783 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,68p,954b,1917s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,66p,10435b,1924s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1823,9 +2315,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Padraig Lysan
 drou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on aiaaTemplate.pdf (10 pages, 361530 bytes).
+Output written on aiaaTemplate.pdf (13 pages, 620964 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 331 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

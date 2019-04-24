@@ -5,7 +5,7 @@
 \usepackage{amsthm}% http://ctan.org/pkg/amsthm
 \usepackage{amsmath}
 \usepackage[linewidth=1pt]{mdframed}
-\usepackage{graphicx}
+\usepackage{graphicx,subfigure}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{longtable,tabularx}
@@ -15,6 +15,10 @@
 % \documentclass[conf]{new-aiaa}
 \usepackage[utf8]{inputenc}
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{subcaption} 
+\usepackage{caption}
+
+
 
 % \newenvironment{proof}
 % {}{}
@@ -73,12 +77,19 @@ This project for ASEN5010 Spacecraft Dynamics and Control considers a small sate
 Let us begin with defining the orbit of the nano-satellite with the following figure
 
 
+% \begin{figure}[!htbp] 
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{Figures/framedef.PNG}
+%   \caption{}
+%   \label{fig:succ}
+%  \end{figure}
+
+
 \begin{figure}[!htbp] 
-  \centering
-  \includegraphics[width=0.5\textwidth]{Figures/framedef.PNG}
-  \caption{Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet.}
-  \label{fig:succ}
- \end{figure}
+\centering     %%% not \center
+\subfigure[Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet.]{\label{fig:T11_state}\includegraphics[width=82mm]{Figures/framedef.PNG}}
+\subfigure[Tracking Error vs Time]{\label{fig:T11_error}\includegraphics[width=82mm]{Figures/orbitscenario.PNG}}
+\end{figure}
 
 
 
@@ -249,7 +260,7 @@ Stacking these unit vectors as such $[\hat{\bm{r}}_1 \ \hat{\bm{r}}_2 \ \hat{\bm
   [R_cN] = [\hat{\bm{r}}_1 \ \hat{\bm{r}}_2 \ \hat{\bm{r}}_3 ]^T
 \end{equation}
 
-Finding $^N\bm{\omega}_{R_cN}$ is nontrivial and finding an analytical expression for the time derivative of the DCM can be challenging. Instead, we can use a numerical approach to find a usable solution. We know that the derivative of a DCM is that: $[\dot{C}] = -[\bm{\omega}^\times][C]$. Therefore we can find the angular rate with the following:
+Finding $^N\bm{\omega}_{R_cN}$ is nontrivial and finding an analytical expression for the time derivative of the DCM can be challenging. Instead, we can use a numerical approach to find a usable solution. We know that the derivative of a DCM is that: $[\dot{C}] = -[\bm{\omega}^\times][C]$ with $^\times$ denoting the skew symmetric matrix form of a cross product. Therefore we can find the angular rate with the following:
 
 
 
@@ -410,65 +421,97 @@ Once we have constrained this gain value, we can take a look at the $K$ gain and
 
 
 
-
 \section*{Task 8: Sun Pointing Plots}
-Let us now simulate the LMO spacecraft performing the sun-point maneuver. We calculate the tracking errors with the function developed earlier and use the reference DCM and angular rate vector developed earlier. These tracking errors are used in our control function with the gains determined in the previous step.
+Let us now simulate the LMO spacecraft performing the sun-point maneuver. We calculate the tracking errors with the function developed earlier and use the reference DCM and angular rate vector developed earlier. These tracking errors are used in our control function with the gains determined in the previous step. With our determined gains, we see how the system tracks the reference for a duration of 400 seconds:
 
-With these gains, we see how the system tracks the reference for a duration of 400 seconds:
-% \begin{figure}[!htbp] 
-%   \centering
-%   \includegraphics[width=0.65\textwidth]{Figures/T8_error.png}
-%   \caption{$\bm{\sigma}$ and $\bm{\omega}$ tracking error over time.}
-%   \label{fig:T8_error}
-%  \end{figure}
-
-
-
-\begin{figure}
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Figures/T8_error.png}
-  \caption{A subfigure}
-  \label{fig:T8_error}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{Figures/T8_state.png}
-  \caption{A subfigure}
-  \label{fig:sub2}
-\end{subfigure}
-\caption{A figure with two subfigures}
-\label{fig:T8_state}
+\begin{figure}[!htbp] 
+\centering     %%% not \center
+\subfigure[States vs Time]{\label{fig:T8_state}\includegraphics[width=82mm]{Figures/T8_state.png}}
+\subfigure[Tracking Error vs Time]{\label{fig:T8_error}\includegraphics[width=82mm]{Figures/T8_error.png}}
+\caption{This figures show the states and state tracking errors over times for a 400 second simulation of sun-pointing.}
 \end{figure}
 
 
 
 
 
-\section*{Task 9: Sun Pointing Plots}
+\section*{Task 9: Nadir (Science Mode) Pointing Plots}
+Now we shall simulate the LMO spacecraft performing purely the Mars-nadir pointing mode, where it gathers data by measuring the surface. The only difference between this mode and the sun-pointing mode are our new DCM and angular rate references. Similarly, we simulate for 400 seconds: 
 
-\section*{Task 10: Sun Pointing Plots}
+\begin{figure}[!htbp] 
+\centering     %%% not \center
+\subfigure[States vs Time]{\label{fig:T9_state}\includegraphics[width=82mm]{Figures/T9_state.png}}
+\subfigure[Tracking Error vs Time]{\label{fig:T9_error}\includegraphics[width=82mm]{Figures/T9_error.png}}
+\caption{This figures show the states and state tracking errors over times for a 400 second simulation of nadir-pointing.}
+\end{figure}
 
+
+
+
+
+\section*{Task 10: GMO Spacecraft Communication Pointing Plots}
+Similarly, we shall apply the control law to the GMO communication-pointing mode. In this mode, the spacecraft tracks the GMO reference attitude and angular rate, in order to uplink information for transmission to Earth. This concludes our individual mode control and we can move onto the full mission simulation with mode mode switching. The 400 second simulation is shown in figure \ref{fig:T10_state} with tracking error in \ref{fig:T10_error}.
+
+\begin{figure}[!htbp]
+\centering     %%% not \center
+\subfigure[States vs Time]{\label{fig:T10_state}\includegraphics[width=82mm]{Figures/T10_state.png}}
+\subfigure[Tracking Error vs Time]{\label{fig:T10_error}\includegraphics[width=82mm]{Figures/T10_error.png}}
+\caption{This figures show the states and state tracking errors over times for a 400 second simulation of GMO-pointing.}
+\end{figure}
+
+
+\newpage
 \section*{Task 11: Mode Switching Mission Scenario}
-\begin{center}
-  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
-                    semithick]
-  \tikzstyle{every state} = [fill=red,draw=none,text=white]
+Next, we must simulate the full mission scenario with mode switching. When the inertial position vector of the LMO spacecraft is positive, or it is in the sun-lit region of the planet, it must point towards the sun to gather power.
 
-  \node[initial,state] (A)                    {$Safe$};
-  \node[state]         (B) [right of=A]       {$S=1$};
-  \node[state]         (C) [right of=B]       {$S=3$};
-  \node[state]         (D) [below right of = B] {$S=2$};
 
-  \path (A) edge [loop above] node {$0$} (A)
-            edge              node {$1$} (B)
-        (B) edge [below, bend right, left=0.3] node {0,1} (C)
-        (C) edge              node {0,0} (D)
-            edge [below, bend right, left=0.3] node {1,0} (B)
-        (D) edge              node {0,1,R} (B);
-  \end{tikzpicture}
-\end{center}
+
+% \begin{center}
+%   \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,semithick]
+%   \tikzstyle{every state} = [fill=red,draw=none,text=white]
+
+%   \node[initial,state] (A)                    {$Safe$};
+%   \node[state]         (B) [right of=A]       {$S=1$};
+%   \node[state]         (C) [right of=B]       {$S=3$};
+%   \node[state]         (D) [below right of = B] {$S=2$};
+
+%   \path (A) edge [loop above] node {$0$} (A)
+%             edge              node {$1$} (B)
+%         (B) edge [below, bend right, left=0.3] node {0,1} (C)
+%         (C) edge              node {0,0} (D)
+%             edge [below, bend right, left=0.3] node {1,0} (B)
+%         (D) edge              node {0,1,R} (B);
+%   \end{tikzpicture}
+% \end{center}
+
+
+
+\begin{figure}[!htbp] 
+\centering     %%% not \center
+\subfigure[States vs Time]{\label{fig:T11_state}\includegraphics[width=82mm]{Figures/T11_state.png}}
+\subfigure[Tracking Error vs Time]{\label{fig:T11_error}\includegraphics[width=82mm]{Figures/T11_error.png}}
+\caption{This figures show the states and state tracking errors over times for the full 6500 second simulation of operation.}
+\end{figure}
+
+\begin{figure}[!htbp] 
+  \centering
+  \includegraphics[width=0.75\textwidth]{Figures/T11_modehistory.png}
+  \caption{This figure shows the modes of the spacecraft over the duration of the mission.}
+  \label{fig:T11_mode}
+ \end{figure}
+
+ \begin{figure}[!htbp] 
+  \centering
+  \includegraphics[width=0.75\textwidth]{Figures/T11_control.png}
+  \caption{this figure shows the on-axis control torques in Nm.}
+  \label{fig:T11_control}
+ \end{figure}
+
+
+
+
+
+
 
 
 \section{Conclusion}
@@ -484,7 +527,14 @@ With these gains, we see how the system tracks the reference for a duration of 4
 
 
 \newpage
-\lstinputlisting[caption = {Main Script}]{main.m}
+\lstinputlisting[caption = {Main Script (Simulation Framework)}]{../../main.m}
+
+\newpage
+\lstinputlisting[caption = {System Dynamics RHS}]{../../dynamics.m}
+
+\lstinputlisting[caption = {Tracking Error Determination}]{../../track_error.m}
+
+\lstinputlisting[caption = {Tracking Error Determination}]{../../oe2rv_schaub.m}
 
 \end{document}
 
