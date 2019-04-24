@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.12)  22 APR 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.12)  23 APR 2019 20:17
 entering extended mode
 **./aiaaTemplate.tex
 (aiaaTemplate.tex
@@ -778,29 +778,604 @@ LaTeX Warning: Command \@xhline  has changed.
 \TX@cols=\count293
 \TX@ftn=\toks31
 )
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\fr
+ontendlayer\tikz.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ba
+siclayer\pgf.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ut
+ilities\pgfrcs.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen175
+\pgfutil@tempdimb=\dimen176
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfutil-common-lists.tex"))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfutil-latex.def"
+\pgfutil@abb=\box56
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\eve
+ryshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ba
+siclayer\pgfcore.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\sy
+stemlayer\pgfsys.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count294
+\c@pgf@countb=\count295
+\c@pgf@countc=\count296
+\c@pgf@countd=\count297
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count298
+\pgfsyssoftpath@bigbuffer@items=\count299
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+systemlayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor
+\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
+cs-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmath.code.tex"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathcalc.code.tex"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathutil.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen185
+\pgfmath@count=\count300
+\pgfmath@box=\box57
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.code.tex"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.basic.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.trigonometric.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.random.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.comparison.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.base.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.round.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.misc.code.tex")
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfunctions.integerarithmetics.code.tex")))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count301
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen186
+\pgf@picmaxx=\dimen187
+\pgf@picminy=\dimen188
+\pgf@picmaxy=\dimen189
+\pgf@pathminx=\dimen190
+\pgf@pathmaxx=\dimen191
+\pgf@pathminy=\dimen192
+\pgf@pathmaxy=\dimen193
+\pgf@xx=\dimen194
+\pgf@xy=\dimen195
+\pgf@yx=\dimen196
+\pgf@yy=\dimen197
+\pgf@zx=\dimen198
+\pgf@zy=\dimen199
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen256
+\pgf@path@lasty=\dimen257
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen258
+\pgf@shorten@start@additional=\dimen259
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count302
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen260
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen261
+\pgf@pt@y=\dimen262
+\pgf@pt@temp=\dimen263
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen264
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen265
+\pgf@sys@shading@range@num=\count303
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box61
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+basiclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box62
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\co
+mpatibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen266
+\pgf@nodesepend=\dimen267
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\co
+mpatibility\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ut
+ilities\pgffor.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ut
+ilities\pgfkeys.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgfkeys.code.tex"))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\ma
+th\pgfmath.sty"
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmath.code.tex"))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+math\pgfmath.code.tex")
+\pgffor@iter=\dimen268
+\pgffor@skip=\dimen269
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+libraries\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count304
+\pgfplotmarksize=\dimen270
+)
+\tikz@lastx=\dimen271
+\tikz@lasty=\dimen272
+\tikz@lastxsaved=\dimen273
+\tikz@lastysaved=\dimen274
+\tikzleveldistance=\dimen275
+\tikzsiblingdistance=\dimen276
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count305
+\tikznumberofchildren=\count306
+\tikznumberofcurrentchild=\count307
+\tikz@fig@count=\count308
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count309
+\pgfmatrixcurrentcolumn=\count310
+\pgf@matrix@numberofcolumns=\count311
+)
+\tikz@expandcount=\count312
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+libraries\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen277
+))
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+frontendlayer\tikz\libraries\tikzlibraryautomata.code.tex"
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+frontendlayer\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\
+libraries\shapes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box67
+\pgfnodeparttwobox=\box68
+\pgfnodepartthreebox=\box69
+\pgfnodepartfourbox=\box70
+\pgfnodeparttwentybox=\box71
+\pgfnodepartnineteenbox=\box72
+\pgfnodeparteighteenbox=\box73
+\pgfnodepartseventeenbox=\box74
+\pgfnodepartsixteenbox=\box75
+\pgfnodepartfifteenbox=\box76
+\pgfnodepartfourteenbox=\box77
+\pgfnodepartthirteenbox=\box78
+\pgfnodeparttwelvebox=\box79
+\pgfnodepartelevenbox=\box80
+\pgfnodeparttenbox=\box81
+\pgfnodepartninebox=\box82
+\pgfnodeparteightbox=\box83
+\pgfnodepartsevenbox=\box84
+\pgfnodepartsixbox=\box85
+\pgfnodepartfivebox=\box86
+)))
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\i
 nputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks32
-\inpenc@posthook=\toks33
-) (aiaaTemplate.aux)
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
+) (mcode.sty
+-- Package: `mcode' 2.5 <2014/03/06> --
+Package: mcode 2014/03/06 2.5
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+ - literate programming (character replacements) enabled
+ - automatic line breaking enabled (careful, buggy!)
+ - framed listings
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
+gs\listings.sty"
+\lst@mode=\count313
+\lst@gtempboxa=\box87
+\lst@token=\toks46
+\lst@length=\count314
+\lst@currlwidth=\dimen278
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen279
+\lst@width=\dimen280
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen281
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
+gs\lstmisc.sty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box88
+)
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
+gs\listings.cfg"
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
+extcomp.sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
+s1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
+s1enc.dfu"
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+\lbreakdots=\box89
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 228.
+
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
+\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)) (aiaaTemplate.aux)
 \openout1 = `aiaaTemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t
+s1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 65.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
 \ot1ptm.fd"
@@ -808,22 +1383,22 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 78.
+(lastpage)             ! on input line 65.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\context\base
 \supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen175
-\scratchbox=\box56
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen176
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count321
+\scratchdimen=\dimen282
+\scratchbox=\box90
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen283
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks48
 )
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
 ek\epstopdf-base.sty"
@@ -840,8 +1415,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 78.
+\AtBeginShipoutBox=\box91
+Package hyperref Info: Link coloring ON on input line 65.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
 ef\nameref.sty"
@@ -851,52 +1426,51 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 diek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count300
+\c@section@level=\count327
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
  (aiaaTemplate.out) (aiaaTemplate.out)
-\@outlinefile=\write3
-\openout3 = `aiaaTemplate.out'.
+\@outlinefile=\write4
+\openout4 = `aiaaTemplate.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count328
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
 ts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 66.
 
 ("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
-\omsptm.fd"
-File: omsptm.fd 
+\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
  [1
 
 {C:/Users/Padraig Lysandrou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
-<Figures/framedef.PNG, id=29, 272.51813pt x 194.22563pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+<Figures/framedef.PNG, id=22, 272.51813pt x 194.22563pt>
 File: Figures/framedef.PNG Graphic file (type png)
 <use Figures/framedef.PNG>
-Package pdftex.def Info: Figures/framedef.PNG  used on input line 91.
+Package pdftex.def Info: Figures/framedef.PNG  used on input line 78.
 (pdftex.def)             Requested size: 234.87749pt x 167.39827pt.
  [2
 
@@ -905,8 +1479,8 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-<to be read again> \AtBegShi@Output 
-                                    \endgroup \set@typeset@protect 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
 \@outputpage ...width {\@thefoot }\color@endbox }}
                                                   \global \let \if@newlist \...
 
@@ -914,32 +1488,161 @@ s been already used, duplicate ignored
                                                   \fi \global \@mparbottom \...
 <output> ...specialoutput \else \@makecol \@opcol 
                                                   \@startcolumn \@whilesw \i...
-<everypar> 
-           \if@nobreak \@nobreakfalse \clubpenalty \@M \if@afterindent \else...
 <to be read again> 
-                   $
-\start@align ...currenvir }{}\@gobble }\fi \else $
-                                                  $\let \split \insplit@ \DN...
-l.152 \begin{align}
-                    <./Figures/framedef.PNG>] [3]
-Overfull \hbox (36.17905pt too wide) detected at line 264
+                   \global 
+\ignorespacesafterend ->\global 
+                                \let \if@ignore \iftrue 
+\end ...use {@end@#1@hook}\csname end#1\endcsname 
+                                                  \@checkend {#1}\expandafte...
+l.125 \end{align}
+                  <./Figures/framedef.PNG>] [3]
+Overfull \hbox (36.17905pt too wide) detected at line 284
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 BN\OT1/cmr/m/n/10 ] = [] []
  []
 
 [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 320.
- (aiaaTemplate.bbl
+put line 338.
+ [5]
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
+                                                  \@tempdima =\wd \@tempboxa...
+l.429 \begin{subfigure}{.5\textwidth}
+                                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
+                                                  \@tempdima =\wd \@tempboxa...
+l.429 \begin{subfigure}{.5\textwidth}
+                                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Figures/T8_error.png, id=101, 421.575pt x 316.18124pt>
+File: Figures/T8_error.png Graphic file (type png)
+<use Figures/T8_error.png>
+Package pdftex.def Info: Figures/T8_error.png  used on input line 431.
+(pdftex.def)             Requested size: 187.89912pt x 140.92455pt.
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
+                                                  \@tempdima =\wd \@tempboxa...
+l.435 \begin{subfigure}{.5\textwidth}
+                                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+\@subfloat ...evmode \setbox \@tempboxa \hbox {#4}
+                                                  \@tempdima =\wd \@tempboxa...
+l.435 \begin{subfigure}{.5\textwidth}
+                                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Figures/T8_state.png, id=102, 421.575pt x 316.18124pt>
+File: Figures/T8_state.png Graphic file (type png)
+<use Figures/T8_state.png>
+Package pdftex.def Info: Figures/T8_state.png  used on input line 437.
+(pdftex.def)             Requested size: 187.89912pt x 140.92455pt.
+[6] (aiaaTemplate.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
-) 
+) [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+<output> ...specialoutput \else \@makecol \@opcol 
+                                                  \@startcolumn \@whilesw \i...
+
+\newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
+                                                  
+l.486 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+<output> ...specialoutput \else \@makecol \@opcol 
+                                                  \@startcolumn \@whilesw \i...
+
+\newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
+                                                  
+l.486 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+<to be read again> \@EveryShipout@Output 
+                                         \endgroup \set@typeset@protect 
+\@outputpage ...width {\@thefoot }\color@endbox }}
+                                                  \global \let \if@newlist \...
+
+\@opcol ...lumn \@outputdblcol \else \@outputpage 
+                                                  \fi \global \@mparbottom \...
+<output> ...specialoutput \else \@makecol \@opcol 
+                                                  \@startcolumn \@whilesw \i...
+
+\newpage ...prevdepth \fi \fi \vfil \penalty -\@M 
+                                                  
+l.486 \newpage
+               <./Figures/T8_error.png (PNG copy)> <./Figures/T8_state.png (PNG
+ copy)>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 487.
+ (main.m
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 5.
+
+("C:\Users\Padraig Lysandrou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss
+\ts1pcr.fd"
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9])
+
 AED: lastpage setting LastPage
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
  (aiaaTemplate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
 
 
  *File List*
@@ -1013,7 +1716,7 @@ etoolbox.sty    2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 zref-abspage.sty    2016/05/21 v2.26 Module abspage for zref (HO)
 zref-base.sty    2016/05/21 v2.26 Module base for zref (HO)
 needspace.sty    2010/09/12 v1.3d reserve vertical space
-   color.sty    2016/07/10 v1.1e Standard LaTeX Color (DPC)
+   color.sty    1999/02/16
    color.cfg    2016/01/02 v1.6 sample color configuration
 md-frame-0.mdf    2013/07/01\ 1.9b: md-frame-0
 algorithm.sty    2009/08/24 v0.1 Document Style `algorithm' - floating environm
@@ -1025,7 +1728,38 @@ algorithmicx.sty    2005/04/27 v1.2 Algorithmicx
 longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
 tabularx.sty    2016/02/03 v2.11b `tabularx' package (DPC)
    array.sty    2018/04/30 v2.4h Tabular extension package (FMi)
+    tikz.sty    2015/08/07 v3.0.1a (rcs-revision 1.151)
+     pgf.sty    2015/08/07 v3.0.1a (rcs-revision 1.15)
+  pgfrcs.sty    2015/08/07 v3.0.1a (rcs-revision 1.31)
+everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
+  pgfrcs.code.tex
+ pgfcore.sty    2010/04/11 v3.0.1a (rcs-revision 1.7)
+  pgfsys.sty    2014/07/09 v3.0.1a (rcs-revision 1.48)
+  pgfsys.code.tex
+pgfsyssoftpath.code.tex    2013/09/09  (rcs-revision 1.9)
+pgfsysprotocol.code.tex    2006/10/16  (rcs-revision 1.4)
+  xcolor.sty    2016/05/11 v2.12 LaTeX color extensions (UK)
+   color.cfg    2016/01/02 v1.6 sample color configuration
+ pgfcore.code.tex
+pgfcomp-version-0-65.sty    2007/07/03 v3.0.1a (rcs-revision 1.7)
+pgfcomp-version-1-18.sty    2007/07/23 v3.0.1a (rcs-revision 1.1)
+  pgffor.sty    2013/12/13 v3.0.1a (rcs-revision 1.25)
+ pgfkeys.sty    
+ pgfkeys.code.tex
+ pgfmath.sty    
+ pgfmath.code.tex
+  pgffor.code.tex
+    tikz.code.tex
 inputenc.sty    2018/04/06 v1.3b Input encoding file
+   mcode.sty    2014/03/06 2.5
+listings.sty    2018/09/02 1.7 (Carsten Heinz)
+ lstmisc.sty    2018/09/02 1.7 (Carsten Heinz)
+listings.cfg    2018/09/02 1.7 listings configuration
+textcomp.sty    2017/04/05 v2.0i Standard LaTeX package
+  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+  ts1enc.dfu    2018/04/05 v1.2c UTF-8 support for inputenc
+  ot1pcr.fd    2001/06/04 font definitions for OT1/pcr.
+  ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
   ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
 supp-pdf.mkii
 epstopdf-base.sty    2016/05/15 v2.6 Base part for package epstopdf
@@ -1036,24 +1770,28 @@ aiaaTemplate.out
 aiaaTemplate.out
     umsa.fd    2013/01/14 v3.01 AMS symbols A
     umsb.fd    2013/01/14 v3.01 AMS symbols B
-  omsptm.fd    
+  ts1ptm.fd    2001/06/04 font definitions for TS1/ptm.
 Figures/framedef.PNG
+Figures/T8_error.png
+Figures/T8_state.png
 aiaaTemplate.bbl
+    main.m
+  ts1pcr.fd    2001/06/04 font definitions for TS1/pcr.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `aiaaTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 2862FD42FCB41A7C20C04EA76A62A3F2;147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
+(rerunfilecheck)             Checksum: C906B509F4D16882234BB83FEFDC0C57;46.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
  ) 
 Here is how much of TeX's memory you used:
- 18348 strings out of 492973
- 322816 string characters out of 3121374
- 406858 words of memory out of 3000000
- 21967 multiletter control sequences out of 15000+200000
- 559825 words of font info for 89 fonts, out of 3000000 for 9000
+ 31852 strings out of 492973
+ 608928 string characters out of 3121374
+ 779875 words of memory out of 3000000
+ 35012 multiletter control sequences out of 15000+200000
+ 563849 words of font info for 98 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,15n,65p,954b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,68p,954b,1917s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1075,17 +1813,19 @@ ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Padraig
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Padraig Lysandro
 u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTe
+/amsfonts/cm/cmsy5.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Padraig Lysandrou/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb><C:/Users/Padraig Lysandrou/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Padraig Lysandrou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Padraig Lysandr
-ou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on aiaaTemplate.pdf (5 pages, 248484 bytes).
+ 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Padraig Lysandrou/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Padraig Lysan
+drou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
+rs/Padraig Lysandrou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on aiaaTemplate.pdf (10 pages, 361530 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 436 PDF objects out of 1000 (max. 8388607)
+ 243 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -31,7 +31,6 @@ vehicle_state = zeros(6,npoints);
 vehicle_state(:,1) = [sigma_BN_0; omega_BN_B_0];
 p.L = [0.0 0 0].';
 p.u = [0 0 0].';
-% vehicle_mode_history = zeros(1,npoints);
 
 % Setup the tracking error stuff, and input history stuff
 sigma_BR = zeros(3,npoints);
@@ -55,8 +54,7 @@ K = (P^2)./Ic(2,2); % still not sure why this is the gain he wants...
 
 
 %% Start the simulation
-vehicle_mode = 0;
-vehicle_mode_history = vehicle_mode;
+vehicle_mode = 4;
 
 tic
 for i = 1:npoints-1
@@ -72,7 +70,6 @@ for i = 1:npoints-1
     
     % Determine the mode of the spacecraft
     if rN_LMO(2)>=0
-        % put the system into sun pointing mode
         vehicle_mode = 1;
     elseif acosd((rN_LMO.'*rN_GMO)/(norm(rN_LMO)*norm(rN_GMO))) < 35
         % put the system into GMO data transfer mode
@@ -81,8 +78,6 @@ for i = 1:npoints-1
         % put the system into nadir point science mode
         vehicle_mode = 2;
     end
-    
-    vehicle_mode_history = [vehicle_mode_history vehicle_mode];
     
     
     % Determine the trackgin DCM/Omega based on vehicle mode
@@ -138,36 +133,17 @@ toc
 
 
 %% Plot data here.
-close all;
 
 % figure; plot(t, H); title('angular momentum');
-figure; subplot(2,1,1);
-plot(t, vehicle_state(1:3,:)); title('MRP Attitude \sigma_{BN} vs Time');
-xlabel('Time s'); ylabel('\sigma'); legend('\sigma_1','\sigma_2','\sigma_3');
-subplot(2,1,2);
-plot(t, vehicle_state(4:6,:)); title('Angular Rate \omega_{BN} vs Time')
-xlabel('Time s'); ylabel('\omega rad/s'); legend('\omega_1','\omega_2','\omega_3');
+figure; plot(t, vehicle_state(1:3,:)); title('mrps over time')
+figure; plot(t, vehicle_state(4:6,:)); title('omegas over time')
 % figure; plot(t, vecnorm(H)); title('Angular Momentum over time')
 
 % figure; semilogy(t, T); title('system angular energy over time')
-figure; subplot(2,1,1);
-plot(t, sigma_BR); title('MRP \sigma_{BR} Error vs Time');
-xlabel('Time s'); ylabel('\sigma'); legend('\sigma_1','\sigma_2','\sigma_3');
-subplot(2,1,2);
-plot(t, omega_BR); title('Angular Rate Error \omega_{BR} vs Time')
-xlabel('Time s'); ylabel('\omega rad/s'); legend('\omega_1','\omega_2','\omega_3');
+figure; plot(t, sigma_BR); title('MRP tracking error vs time');
+figure; plot(t, omega_BR); title('Angular rate tracking error vs time');
 
-figure; plot(t, vehicle_mode_history); title('Vehicle Mode History vs Time')
-xlabel('Time s'); ylabel('Mode');
-grid on; hold on;
-dim = [0.7 0.6 0.3 0.3];
-str = {'0: Safe Mode','1: Sun Point','2: Nadir Point', '3: GMO Point'};
-annotation('textbox',dim,'String',str,'FitBoxToText','on');
-hold off;
 
-figure; plot(t, control_input); title('Control Torque over Time');
-xlabel('Time s'); ylabel('Torque, Nm');
-legend('\tau_1','\tau_2','\tau_3');
 
 % Saving things for Checkoff 7
 % save_to_txt('H500B.txt', H(:,end));

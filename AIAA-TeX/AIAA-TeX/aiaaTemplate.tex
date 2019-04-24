@@ -9,25 +9,12 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{longtable,tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 % \documentclass[conf]{new-aiaa}
 \usepackage[utf8]{inputenc}
-
-% \usepackage[utf8]{inputenc}
-% \usepackage{subcaption}
-% \usepackage{sidecap}
-% \usepackage{mathtools}
-% \usepackage{commath}
-% \usepackage{listings}
-% \usepackage[version=4]{mhchem}
-% \usepackage{siunitx}
-% \usepackage{amsmath,amsfonts,bm} % Math packages
-% \setlength\LTleft{0pt} 
-
-
-% \usepackage{longtable,tabularx}
-% \usepackage[utf8]{inputenc}
-
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
 
 % \newenvironment{proof}
 % {}{}
@@ -80,9 +67,9 @@ This project for ASEN5010 Spacecraft Dynamics and Control considers a small sate
 
 
 \clearpage
-\section{Introduction}
+\section*{Introduction}
 
-\section{Problem Statement}
+\section*{Problem Statement}
 Let us begin with defining the orbit of the nano-satellite with the following figure
 
 
@@ -92,6 +79,39 @@ Let us begin with defining the orbit of the nano-satellite with the following fi
   \caption{Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet.}
   \label{fig:succ}
  \end{figure}
+
+
+
+
+\section*{Initial Conditions and Problem Setup}
+Before we begin with our work on the simulation and controller, we must define our initial conditions and operational parameters.
+
+\begin{align}
+  \bm{\sigma}_{B/N}(t_0) &= \begin{bmatrix} 0.3 \\ -0.4 \\ 0.5 \end{bmatrix} \\
+  ^\mathcal{B}\bm{\omega}_{B/N}(t_0) &= \begin{bmatrix} 1 \\ 1.75 \\ -2.2 \end{bmatrix} \text{deg/s} \\
+  ^\mathcal{B}[I] &= 
+  \begin{bmatrix}
+  10 & 0 & 0 \\
+  0 & 5 & 0 \\
+  0 & 0 & 7.5
+  \end{bmatrix} \text{kg m}^2
+\end{align}
+
+We will also use the following Keplerian orbital elements for both spacecraft:
+
+\begin{center}
+ \begin{tabular}{||c c c c c||} 
+ \hline
+ Spacecraft & $r$ & $\Omega$ & $i$ & $\theta(t_0)$\\ [0.5ex] 
+ \hline\hline
+ LMO & 3796.19 km & 20$^\circ$ & 30$^\circ$ & 60$^\circ$ \\ 
+ \hline
+ GMO & 20424.2 km & 0$^\circ$ & 0$^\circ$ & 250$^\circ$ \\
+ \hline
+\end{tabular}
+\end{center}
+
+Additionally, we use a gravitational parameter $\mu = 42828.3 \text{km}^3 \text{/s}^2$. We can also calculate each rotation rate using the circular motion assumption of $\dot{\theta} = \sqrt { \frac{\mu}{r^3}}$. These parameters will be used for all of the tasks and intermediate simulations in this project.
 
 
 
@@ -138,7 +158,7 @@ Which describes a rotation from Earth Centered Inertial frame. Each portion of t
   \end{bmatrix}
 \end{align}
 
-When the ECI direction cosine matrix is calculated, $\theta$ must be propagated over time, as the true anomaly is the only perifocal parameter that is time variant. It is calculate as such: $\theta = \theta_0 + t*\dot{\theta}$.
+When the ECI direction cosine matrix is calculated, $\theta$ must be propagated over time, as the true anomaly is the only perifocal parameter that is time variant. It is calculated as such: $\theta = \theta_0 + t*\dot{\theta}$.
 
 
 
@@ -312,9 +332,7 @@ For $\bm{u}$ control torque vector, the rigid body dynamics obey the following:
   [I]\bm{\dot{\omega}}_{BN} = -[\boldsymbol{\omega}_{BN}^\times][I]\bm{\omega}_{BN} + \bm{u} - \bm{L}
 \end{equation}
 
-We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the nonlinear dynamics function $\dot{\bm{X}} = f(t,\bm{X})$, the integration algorithm is:
-
-
+We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the nonlinear dynamics function $\dot{\bm{X}} = f(t,\bm{X})$, the integration is Algorithm \ref{RK4}. Each point $i \in [1:N]$ is 1 integration time step, and therefore the full simulation time $dtN$. Using this simulation framework, we can study our angular momentum $\bm{H} = [I]\bm{\omega}_{BN}$ and kinetic energy $T = \frac{1}{2} \bm{\omega}_{BN}^T [I] \bm{\omega}_{BN}$ over time.
 
 \begin{algorithm}
 \caption{Fourth Order Runge Kutte Integrator}\label{RK4}
@@ -329,12 +347,14 @@ We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the non
 \end{algorithmic}
 \end{algorithm}
 
-Each point $i \in [1:N]$ is 1 integration time step, and therefore the full simulation time $dtN$. Using this simulation framework, we can study our angular momentum $\bm{H} = [I]\bm{\omega}_{BN}$ and kinetic energy $T = \frac{1}{2} \bm{\omega}_{BN}^T [I] \bm{\omega}_{BN}$ over time.
 
 
 
 
-\section*{Task 8: Sun Pointing Control}
+
+
+
+\section*{Task 8: Control for Sun, Nadir, and Communication Pointing}
 Next, the control architecture must be developed. We shall use the linearized closed loop dynamics to determine the proportional and derivative gains.
 
 Let us consider the PD nonlinear feedback control law: 
@@ -342,35 +362,129 @@ Let us consider the PD nonlinear feedback control law:
   \boldsymbol{u}=-K \boldsymbol{\sigma}-[P] \delta \boldsymbol{\omega}+[I]\left(\dot{\boldsymbol{\omega}}_{r}-[{\boldsymbol{\omega}}^\times] \boldsymbol{\omega}_{r}\right)  +[{\boldsymbol{\omega}}^\times][I] \boldsymbol{\omega}-\boldsymbol{L}
 \end{equation}
 
-Let us disregard the external torque modeling error and consider the displacement MRP and deviation angular rate with the following state vector: 
+Let us disregard the external torque modeling error and consider the displacement MRP and deviation angular rate with the following control:
 
 \begin{equation}
-\boldsymbol{x}=\left( \begin{array}{c}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{array}\right)
+  ^\mathcal{B}{\boldsymbol{u}}=-K \boldsymbol{\sigma}_{B / R}-P^{\mathcal{B}} \boldsymbol{\omega}_{B / R}
+\end{equation}
+
+
+Let us look at the closed loop dynamics with this state vector: 
+
+\begin{equation}
+\boldsymbol{x}= \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
 \end{equation}
 
 Using the differential kinematic equation for the MRPs we arrive at the following nonlinear state space formulation, with the closed loop full-state feedback: 
 
 
 \begin{equation}
-\dot{\boldsymbol{x}}=\left( \begin{array}{c}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\omega}}\end{array}\right)=\left[ \begin{array}{cc}{0} & {\frac{1}{4} B(\boldsymbol{\sigma})} \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
+\dot{\boldsymbol{x}}= \begin{bmatrix}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\boldsymbol{\omega}}}\end{bmatrix} =\left[ \begin{array}{cc}{0} & {\frac{1}{4} B(\boldsymbol{\sigma})} \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
 \end{equation}
 
 The small angle approximation is employed to linearize this formulation with the following:
 
 \begin{equation}
-\left( \begin{array}{c}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\omega}}\end{array}\right)=\left[ \begin{array}{cc}{0} & {\frac{1}{4} \mathbb{I}_3 } \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
+\begin{bmatrix}{\dot{\boldsymbol{\sigma}}} \\ {\delta \dot{\boldsymbol{\omega}}}\end{bmatrix} =\left[ \begin{array}{cc}{0} & {\frac{1}{4} \mathbb{I}_3 } \\ {-K[I]^{-1}} & {-[I]^{-1}[P]}\end{array}\right] \begin{bmatrix}{\boldsymbol{\sigma}} \\ {\delta \boldsymbol{\omega}}\end{bmatrix}
 \end{equation}
 
+We can find the eigenvalues of this matrix to see how the gains affect the stability of the system. The roots act as the following:
 
+\begin{equation}
+  \lambda_i = \frac{-1}{2I_i} \left(P_{i} \pm \sqrt{-K I_{i}+P_{i}^{2}}\right) \quad i=1,2,3
+\end{equation}
+
+Now, we can choose the gains such that they meet our operation criterion. We want to use single scalar gains for both $K$ and $P$. We know that we have a decay time of $T=120$ seconds which constraints out P value with the following:
+
+\begin{equation}
+  P = \max_i \bigg (\frac{2I_i}{T}  \bigg)
+\end{equation}
+
+Once we have constrained this gain value, we can take a look at the $K$ gain and damping coefficient for each of the modes. We know the relationship $\xi_i=\frac{P}{\sqrt{KI_i}}$. We can find a solution for the critically damped $\xi = 1$ mode, then pick an inertia that results in the other modes being critically or underdamped, where $\xi \leq 1 $. We end with the result that $[P \  K] = [0.1666  \ \ 0.0055]$.
+
+
+
+
+
+
+
+
+
+
+\section*{Task 8: Sun Pointing Plots}
+Let us now simulate the LMO spacecraft performing the sun-point maneuver. We calculate the tracking errors with the function developed earlier and use the reference DCM and angular rate vector developed earlier. These tracking errors are used in our control function with the gains determined in the previous step.
+
+With these gains, we see how the system tracks the reference for a duration of 400 seconds:
+% \begin{figure}[!htbp] 
+%   \centering
+%   \includegraphics[width=0.65\textwidth]{Figures/T8_error.png}
+%   \caption{$\bm{\sigma}$ and $\bm{\omega}$ tracking error over time.}
+%   \label{fig:T8_error}
+%  \end{figure}
+
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{Figures/T8_error.png}
+  \caption{A subfigure}
+  \label{fig:T8_error}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{Figures/T8_state.png}
+  \caption{A subfigure}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\label{fig:T8_state}
+\end{figure}
+
+
+
+
+
+\section*{Task 9: Sun Pointing Plots}
+
+\section*{Task 10: Sun Pointing Plots}
+
+\section*{Task 11: Mode Switching Mission Scenario}
+\begin{center}
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state} = [fill=red,draw=none,text=white]
+
+  \node[initial,state] (A)                    {$Safe$};
+  \node[state]         (B) [right of=A]       {$S=1$};
+  \node[state]         (C) [right of=B]       {$S=3$};
+  \node[state]         (D) [below right of = B] {$S=2$};
+
+  \path (A) edge [loop above] node {$0$} (A)
+            edge              node {$1$} (B)
+        (B) edge [below, bend right, left=0.3] node {0,1} (C)
+        (C) edge              node {0,0} (D)
+            edge [below, bend right, left=0.3] node {1,0} (B)
+        (D) edge              node {0,1,R} (B);
+  \end{tikzpicture}
+\end{center}
 
 
 \section{Conclusion}
+
+
 
 \section*{Acknowledgment}
 
 \bibliographystyle{aiaa}   % Number the references.
 \bibliography{references}   % Use references.bib to resolve the labels.
 
+
+
+
+\newpage
+\lstinputlisting[caption = {Main Script}]{main.m}
 
 \end{document}
 
