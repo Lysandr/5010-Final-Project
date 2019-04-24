@@ -15,8 +15,8 @@
 % \documentclass[conf]{new-aiaa}
 \usepackage[utf8]{inputenc}
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
-\usepackage{subcaption} 
-\usepackage{caption}
+% \usepackage{subcaption} 
+% \usepackage{caption}
 
 
 
@@ -64,38 +64,39 @@ Diego,~CA,               July~29--31,~1996.
 }
 
 \abstract{
-This project for ASEN5010 Spacecraft Dynamics and Control considers a small satellite orbiting Mars at a low altitude. This spacecraft gathers science data and transfers this data to another satellite orbiting at a higher altitude. Periodically, this spacecraft must transition from nadir-pointing, science gathering mode to sun-pointing mode to recharge the battery system. The three missions goals are nadir-pointing, communicating with the mother spacecraft, and to sun-point. Both of these spacecraft are in circular orbits.}
+This project for ASEN5010 Spacecraft Dynamics and Control considers a small satellite orbiting Mars at a low altitude. This spacecraft gathers science data and transfers this data to another satellite orbiting at a higher altitude. Periodically, this spacecraft must transition from nadir-pointing, science gathering mode to sun-pointing mode to recharge the battery system. The three missions goals are nadir-pointing, communicating with the mother spacecraft, and to sun-point. We must develop a simulation architecture to demonstrate closed loop attitude control and verify performance characteristics.}
 
 \begin{document}
 \maketitle
 
+\section*{Introduction and Problem Definition}
+\PARstart{T}{his} project for ASEN5010, taught by Professor Hanspeter Schaub, considers a data-collection small satellite orbiting mars in a low Martian orbit (LMO) and a larger relay vehicle in a geosynchronous Martian orbit (GMO). The small spacecraft transmits data to the larger vehicle, which relays this information to another target. The small satellite has three main attitude mode: sun-pointing for power collection, nadir-pointing for science collection, and GMO-pointing for data transmission. Therefore, the three main mission goals for this spacecraft attitude control system are: 1) point the sensor platform towards Mars, 2) point the communication platform to the mother spacecraft for relay, 3) point the solar array at the sun for power collection. Both of these spacecraft are on simple circular orbits with known Keplerian orbital elements. We shall write a simulation architecture to demonstrate control of the spacecraft to converge to these three different reference objectives. The reference attitude and angular rate will be generated and tracked depending on the control mode of the spacecraft. Given that we know the inertial motion of both spacecraft, these reference frames are easily determined. Our torque control law shall drive the attitude MRP $\bm{\sigma}_{B/M}$ and angular rate $\bm{\omega}_{B/N}$ towards the nominal reference values. The scope of this problem includes reference frame generation, attitude and feedback control characterization, and simulation architecture development.
 
-\clearpage
-\section*{Introduction}
+
+
+
 
 \section*{Problem Statement}
-Let us begin with defining the orbit of the nano-satellite with the following figure
+Now that we know we must create a simulation and control law for this spacecraft for each of it's pointing scenarios, let us begin by defining the orbit of the nano-satellite and GMO spacecraft with figure \ref{fig:prob1} and figure \ref{fig:prob2}. We know that both spacecraft are in circular two-body orbits with different inclinations, and elements defined in table 1 below. The nano-satellite has an orbital altitude of 400km. Mars has an approximate rotational period of 1 day and 37 minutes, which should be the same period of our GMO spacecraft. This calculation leads to an orbital radius of approximately 20424.2 km. We assume this spacecraft to be in the equatorial, zero inclination plane. Given circular orbits, we can assume their orbital angular rates to be static. Lastly, we must describe the LMO spacecraft body frame construction showed in figure \ref{fig:sc}.
 
 
-% \begin{figure}[!htbp] 
-%   \centering
-%   \includegraphics[width=0.5\textwidth]{Figures/framedef.PNG}
-%   \caption{}
-%   \label{fig:succ}
-%  \end{figure}
 
 
 \begin{figure}[!htbp] 
 \centering     %%% not \center
-\subfigure[Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet.]{\label{fig:T11_state}\includegraphics[width=82mm]{Figures/framedef.PNG}}
-\subfigure[Tracking Error vs Time]{\label{fig:T11_error}\includegraphics[width=82mm]{Figures/orbitscenario.PNG}}
+\subfigure[Illustration of the Inertial, Hill, and perifocal geometrical constructions. Taken from ASEN5010 Semester Project sheet \cite{sheet}.]{\label{fig:prob1}\includegraphics[width=82mm]{Figures/framedef.PNG}}
+\subfigure[Overlook of each spacecraft orbit \cite{sheet}.]{\label{fig:prob2}\includegraphics[width=82mm]{Figures/orbitscenario.PNG}}
 \end{figure}
 
 
+\begin{figure}[!htbp] 
+  \centering
+  \includegraphics[width=0.5\textwidth]{Figures/sc_body.PNG}
+  \caption{Body frame definition of our LMO spacecraft \cite{sheet}.}
+  \label{fig:sc}
+\end{figure}
 
-
-\section*{Initial Conditions and Problem Setup}
-Before we begin with our work on the simulation and controller, we must define our initial conditions and operational parameters.
+In the tasks to come, we shall derive each of the pointing frames and their control law. Additionally, we will describe the simulation framework construction. Before we begin with our work on the simulation and controller, we must define our initial conditions and operational parameters. Equations 1-3 are the initial attitude, angular rate, and the fixed intertia matrix that will be used throughout the project.
 
 \begin{align}
   \bm{\sigma}_{B/N}(t_0) &= \begin{bmatrix} 0.3 \\ -0.4 \\ 0.5 \end{bmatrix} \\
@@ -337,11 +338,18 @@ Now we must numerically integrate our differential equations of motion to simula
   \end{bmatrix}
 \end{equation}
 
-For $\bm{u}$ control torque vector, the rigid body dynamics obey the following:
+Again with $^\times$ denoting the skew symmetric matrix form of a cross product, for $\bm{u}$ control torque vector, we know the the rigid body dynamics obey the following:
 
 \begin{equation}
   [I]\bm{\dot{\omega}}_{BN} = -[\boldsymbol{\omega}_{BN}^\times][I]\bm{\omega}_{BN} + \bm{u} - \bm{L}
 \end{equation}
+
+This can be solved for purely $\bm{\dot{\omega}}_{BN}$ on the left hand side. We also know the following to be the kinematic differential equation for the MRP attitude formalism \cite{sj}:
+
+\begin{equation}
+  \bm{\dot{\sigma}}_{BN} = \frac{1}{4} [(1-\sigma^2)\mathbb{I}_3 + 2[\bm{\sigma}^\times] + 2\bm{\sigma}\bm{\sigma}^T]^\mathcal{B}\bm{{\omega}}_{BN}
+\end{equation}
+
 
 We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the nonlinear dynamics function $\dot{\bm{X}} = f(t,\bm{X})$, the integration is Algorithm \ref{RK4}. Each point $i \in [1:N]$ is 1 integration time step, and therefore the full simulation time $dtN$. Using this simulation framework, we can study our angular momentum $\bm{H} = [I]\bm{\omega}_{BN}$ and kinetic energy $T = \frac{1}{2} \bm{\omega}_{BN}^T [I] \bm{\omega}_{BN}$ over time.
 
@@ -357,6 +365,8 @@ We use a fourth order Runge-Kutte algorithm for integration (RK4). Using the non
 \EndFor
 \end{algorithmic}
 \end{algorithm}
+
+Code appended to the end of the document shows the structure of the simulation. We must first describe our initial conditions as part of the state vector, then define our time span, distribute our states, calculate the control, integrate for one step, check the norm of the MRP, populate our state vectors, and continue.
 
 
 
@@ -408,7 +418,7 @@ We can find the eigenvalues of this matrix to see how the gains affect the stabi
 Now, we can choose the gains such that they meet our operation criterion. We want to use single scalar gains for both $K$ and $P$. We know that we have a decay time of $T=120$ seconds which constraints out P value with the following:
 
 \begin{equation}
-  P = \max_i \bigg (\frac{2I_i}{T}  \bigg)
+  P = \max_i \bigg (\frac{2I_{ii}}{T}  \bigg)
 \end{equation}
 
 Once we have constrained this gain value, we can take a look at the $K$ gain and damping coefficient for each of the modes. We know the relationship $\xi_i=\frac{P}{\sqrt{KI_i}}$. We can find a solution for the critically damped $\xi = 1$ mode, then pick an inertia that results in the other modes being critically or underdamped, where $\xi \leq 1 $. We end with the result that $[P \  K] = [0.1666  \ \ 0.0055]$.
@@ -428,15 +438,20 @@ Let us now simulate the LMO spacecraft performing the sun-point maneuver. We cal
 \centering     %%% not \center
 \subfigure[States vs Time]{\label{fig:T8_state}\includegraphics[width=82mm]{Figures/T8_state.png}}
 \subfigure[Tracking Error vs Time]{\label{fig:T8_error}\includegraphics[width=82mm]{Figures/T8_error.png}}
-\caption{This figures show the states and state tracking errors over times for a 400 second simulation of sun-pointing.}
+\caption{These figures show the states and state tracking errors over times for a 400 second simulation of sun-pointing.}
 \end{figure}
+
+The error figure \ref{fig:T8_error} clearly converges to zero in both state and angular rate tracking as time approaches the end of the simulation. This slow time constant of 120 seconds makes sure that the applied torques are small (in the milli-Nm range), such that they are achievable torques for practical actuators.
+
+
+
 
 
 
 
 
 \section*{Task 9: Nadir (Science Mode) Pointing Plots}
-Now we shall simulate the LMO spacecraft performing purely the Mars-nadir pointing mode, where it gathers data by measuring the surface. The only difference between this mode and the sun-pointing mode are our new DCM and angular rate references. Similarly, we simulate for 400 seconds: 
+Now we shall simulate the LMO spacecraft performing purely the Mars-nadir pointing mode, where it gathers data by measuring the surface. The only difference between this mode and the sun-pointing mode are our new DCM and angular rate references. Similarly, we simulate for 400 seconds in figure \ref{fig:T9_state} with errors in figure \ref{fig:T9_error}. Again the error figure \ref{fig:T9_error} shows convergence over the simulation time, as we would expect from our control derivation.
 
 \begin{figure}[!htbp] 
 \centering     %%% not \center
@@ -449,8 +464,13 @@ Now we shall simulate the LMO spacecraft performing purely the Mars-nadir pointi
 
 
 
+
+
+
+
+
 \section*{Task 10: GMO Spacecraft Communication Pointing Plots}
-Similarly, we shall apply the control law to the GMO communication-pointing mode. In this mode, the spacecraft tracks the GMO reference attitude and angular rate, in order to uplink information for transmission to Earth. This concludes our individual mode control and we can move onto the full mission simulation with mode mode switching. The 400 second simulation is shown in figure \ref{fig:T10_state} with tracking error in \ref{fig:T10_error}.
+Similarly, we shall apply the control law to the GMO communication-pointing mode. In this mode, the spacecraft tracks the GMO reference attitude and angular rate, in order to uplink information for transmission to Earth. This concludes our individual mode control and we can move onto the full mission simulation with mode mode switching. The 400 second simulation is shown in figure \ref{fig:T10_state} with tracking error in \ref{fig:T10_error}. Again the error figure \ref{fig:T10_error} shows convergence over the simulation time, as we would expect from our control derivation.
 
 \begin{figure}[!htbp]
 \centering     %%% not \center
@@ -460,9 +480,15 @@ Similarly, we shall apply the control law to the GMO communication-pointing mode
 \end{figure}
 
 
-\newpage
+
+
+
+
+\clearpage
 \section*{Task 11: Mode Switching Mission Scenario}
-Next, we must simulate the full mission scenario with mode switching. When the inertial position vector of the LMO spacecraft is positive, or it is in the sun-lit region of the planet, it must point towards the sun to gather power.
+Next, we must simulate the full mission scenario with mode switching. When the inertial position vector of the LMO spacecraft is positive, or it is in the sun-lit region of the planet, it must point towards the sun to gather power; otherwise, we can choose between nadir and GMO pointing regimes. When the spacecraft is in the eclipse regime, we must decide between nadir and GMO pointing. We use the heuristic of there being at most a 35 degree angle displacement between the inertial position vector of the LMO and GMO spacecraft. When the angular difference is within this bound, we point towards the GMO mother ship, otherwise, we nadir-point to collect science data.
+
+Simulating this mode switching logic for 6500 seconds yields a state plot \ref{fig:T11_state} with error figure \ref{fig:T11_error}. Again, we notice convergence after each context switch, which are denoted in the mode history plot \ref{fig:T11_mode}. The control used over time is displayed in figure \ref{fig:T11_control}.
 
 
 
@@ -490,43 +516,31 @@ Next, we must simulate the full mission scenario with mode switching. When the i
 \centering     %%% not \center
 \subfigure[States vs Time]{\label{fig:T11_state}\includegraphics[width=82mm]{Figures/T11_state.png}}
 \subfigure[Tracking Error vs Time]{\label{fig:T11_error}\includegraphics[width=82mm]{Figures/T11_error.png}}
-\caption{This figures show the states and state tracking errors over times for the full 6500 second simulation of operation.}
+\caption{These figures show the states and state tracking errors over times for the full 6500 second simulation of operation.}
 \end{figure}
 
+
 \begin{figure}[!htbp] 
-  \centering
-  \includegraphics[width=0.75\textwidth]{Figures/T11_modehistory.png}
-  \caption{This figure shows the modes of the spacecraft over the duration of the mission.}
-  \label{fig:T11_mode}
- \end{figure}
-
- \begin{figure}[!htbp] 
-  \centering
-  \includegraphics[width=0.75\textwidth]{Figures/T11_control.png}
-  \caption{this figure shows the on-axis control torques in Nm.}
-  \label{fig:T11_control}
- \end{figure}
+\centering     %%% not \center
+\subfigure[This figure shows the mode of the spacecraft over the duration of the mission. This makes sense as the 35 degree angle constraint should only be a small subset of the eclipse duration.]{\label{fig:T11_mode}\includegraphics[width=82mm]{Figures/T11_modehistory.png}}
+\subfigure[This figure shows the on-axis control torques in Nm.]{\label{fig:T11_control}\includegraphics[width=82mm]{Figures/T11_control.png}}
+\caption{Mode and Control states for the full mission.}
+\end{figure}
 
 
 
 
 
+\clearpage
+\section{Conclusion and Future Work}
+In conclusion, the simulation and control functioned nominally and are extensible to more complicated mission and control architectures. This framework is a useful tool that can be used for future projects requiring attitude determination and control simulation. The immediate next steps are performing close actuator simulation and control. Momentum exchange devices are most likely to be used and have many issues that require deeper understanding and simulation. These traits could be device saturation, singularity avoidance, and control robustness under exogenous torques or Kane damping effects.
 
-
-
-\section{Conclusion}
-
-
-
-\section*{Acknowledgment}
 
 \bibliographystyle{aiaa}   % Number the references.
 \bibliography{references}   % Use references.bib to resolve the labels.
 
 
-
-
-\newpage
+\section*{Project Code}
 \lstinputlisting[caption = {Main Script (Simulation Framework)}]{../../main.m}
 
 \newpage

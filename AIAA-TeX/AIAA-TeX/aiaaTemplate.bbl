@@ -1,4 +1,13 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \newcommand{\enquote}[1]{``#1''}
+
+\bibitem{sheet}
+Schaub, P. D.~H., \enquote{{Attitude Dynamics and Control of a Nano-Satellite
+  Orbiting Mars},} 2019.
+
+\bibitem{sj}
+Schaub, H. and Junkins, J.~L., {\em Analytical mechanics of space systems\/},
+  American Institute of Aeronautics and Astronautics, Inc, Reston, Virginia,
+  4th ed., 2018.
 
 \end{thebibliography}
